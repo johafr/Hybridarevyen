@@ -1,5 +1,5 @@
 import React from "react";
-//import AppBar from "../components/AppBar";
+import AppBar from "../components/AppBar";
 import { History } from "history";
 
 interface Props {
@@ -9,8 +9,7 @@ interface Props {
 const Home: React.FC<Props> = ({ history }) => {
   return (
     <div>
-      {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
-      <header>Home</header>
+      <AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>
     </div>
   );
 };
