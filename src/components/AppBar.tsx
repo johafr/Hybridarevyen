@@ -31,7 +31,7 @@ const AppBar: React.FC<AppBarProps> = ({ onOmOss, history }) => {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     Toolbar: {
-      backgroundColor: theme.palette.secondary.main,
+      backgroundColor: "#0A36AF",
       position: "static",
       boxShadow: "0px 4px 5px -5px",
       marginBottom: theme.spacing(0.2),
