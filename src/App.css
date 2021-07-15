@@ -37,6 +37,14 @@
   padding: 15%;
 }
 
+.personBilde {
+  max-width: 100%;
+}
+
+.Table {
+  padding: 90%;
+}
+
 .App-link {
   color: #61dafb;
 }

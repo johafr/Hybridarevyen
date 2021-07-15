@@ -1,8 +1,8 @@
 import React from "react";
 import AppBar from "../components/AppBar";
 import { History } from "history";
-import styrebilde from "../styrebilde.png";
-import Person from "../components/placeholder.png";
+import styrebilde from "../styrebilde.jpg";
+import Person from "../placeholder.png";
 import { Table, TableBody, TableCell, TableRow } from "@material-ui/core";
 
 interface Props {
@@ -52,12 +52,14 @@ const Home: React.FC<Props> = ({ history }) => {
       <Table>
         <TableBody>
           {styremedlemmer.map((member) => (
-            <TableRow key={member.Navn}>
-              <TableCell>
-                <img src={Person} alt="test"></img>
+            <TableRow key={member.Navn} className="Table">
+              <TableCell className="personBilde">
+                <img src={Person} alt="test" className="personBilde"></img>
               </TableCell>
-              <TableCell>{member.Navn}</TableCell>
-              <TableCell>{member.Tekst}</TableCell>
+              <TableCell>
+                <p>{member.Navn}</p>
+                <p>{member.Tekst}</p>
+              </TableCell>
             </TableRow>
           ))}
           ;
