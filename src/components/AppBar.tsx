@@ -7,11 +7,15 @@ import {
   Typography,
   Toolbar,
   Button,
+  Paper,
 } from "@material-ui/core";
+//import HomeIcon from "@material-ui/icons";
+import Revylogo from "../SDoneline.png";
 
 interface AppBarProps {
   onOmOss: () => any;
   history: History<any>;
+  //onHome: () => any;
 }
 
 const AppBar: React.FC<AppBarProps> = ({ onOmOss, history }) => {
@@ -19,10 +23,15 @@ const AppBar: React.FC<AppBarProps> = ({ onOmOss, history }) => {
   return (
     <React.Fragment>
       <Toolbar className={classes.Toolbar}>
-        <Button variant="contained" onClick={onOmOss}>
+        {/*<Button variant="contained" className={classes.Button}>
+          <HomeIcon onClick={OnHome}></HomeIcon>
+          </Button>*/}
+        {/*<Button variant="contained" onClick={onOmOss}>
           Om oss
-        </Button>
-        <Typography className={classes.Header}>Hybridarevyen 2022</Typography>
+        </Button>*/}
+        <Paper className={classes.header} elevation={0}>
+          <img src={Revylogo} alt="test"></img>
+        </Paper>
       </Toolbar>
     </React.Fragment>
   );
@@ -36,14 +45,11 @@ const useStyles = makeStyles((theme: Theme) =>
       boxShadow: "0px 4px 5px -5px",
       marginBottom: theme.spacing(0.2),
     },
-    Header: {
-      fontFamily: "-apple-system",
-      fontSize: "200%",
-      color: "#fff",
-      width: "100%",
-      textAlign: "center",
-      fontWeight: 550,
-      marginRight: "10%",
+    Button: {},
+    header: {
+      margin: "auto",
+      marginBottom: theme.spacing(2),
+      marginTop: theme.spacing(2),
     },
   })
 );

@@ -4,6 +4,8 @@ import ReactRouterDom from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import styrebilde from "../styrebilde.png";
+import placeholder from "../placeholder.png";
 
 ReactDOM.render(
   <React.StrictMode>
