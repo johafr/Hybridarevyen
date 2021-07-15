@@ -11,11 +11,13 @@ interface Props {
 
 const styremedlemmer = [
   {
+    Bilde: Person,
     Navn: "Casper Faarlund",
     Tekst:
       "Det er lite vits i å ha en revy dersom ingen vet at den finnes. Som PR sjef skal jeg, sammen med en PR-gruppe jeg tar opp, sørge for at flest mulig får vite at Hybrida nå har en revy, og at det er en revy de ønsker å enten jobbe med, eller se på. PR-gruppen omfatter selvfølgelig litt grafisk design og filmlaging, men også ikke-tekniske oppgaver som å planlegge markedsføringen, eventuelle stands, og generelt alle mulige ideer folk skulle ha! Her trengs ingen forkunnskaper, og om du ønsker å lære mer av det tekniske arrangeres det seff opplæring;) Her er det bare å søke enten du er kreativ eller ikke, for PR er som kjent den uoffisielle kosegruppa<3",
   },
   {
+    Bilde: Person,
     Navn: "Johannes Reinseth",
     Tekst:
       "Det er lite vits i å ha en revy dersom ingen vet at den finnes. Som PR sjef skal jeg, sammen med en PR-gruppe jeg tar opp, sørge for at flest mulig får vite at Hybrida nå har en revy, og at det er en revy de ønsker å enten jobbe med, eller se på. PR-gruppen omfatter selvfølgelig litt grafisk design og filmlaging, men også ikke-tekniske oppgaver som å planlegge markedsføringen, eventuelle stands, og generelt alle mulige ideer folk skulle ha! Her trengs ingen forkunnskaper, og om du ønsker å lære mer av det tekniske arrangeres det seff opplæring;) Her er det bare å søke enten du er kreativ eller ikke, for PR er som kjent den uoffisielle kosegruppa<3",
@@ -54,7 +56,11 @@ const Home: React.FC<Props> = ({ history }) => {
           {styremedlemmer.map((member) => (
             <TableRow key={member.Navn} className="Table">
               <TableCell className="personBilde">
-                <img src={Person} alt="test" className="personBilde"></img>
+                <img
+                  src={member.Bilde}
+                  alt="test"
+                  className="personBilde"
+                ></img>
               </TableCell>
               <TableCell>
                 <p>{member.Navn}</p>
