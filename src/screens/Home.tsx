@@ -3,7 +3,15 @@ import AppBar from "../components/AppBar";
 import { History } from "history";
 import styrebilde from "../styrebilde.jpg";
 import Person from "../placeholder.png";
-import { Table, TableBody, TableCell, TableRow } from "@material-ui/core";
+import {
+  createStyles,
+  makeStyles,
+  Table,
+  TableBody,
+  TableCell,
+  TableRow,
+  Theme,
+} from "@material-ui/core";
 
 interface Props {
   history: History<any>;
@@ -25,6 +33,7 @@ const styremedlemmer = [
 ];
 
 const Home: React.FC<Props> = ({ history }) => {
+  const classes = useStyles();
   return (
     <div>
       <AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>
@@ -51,19 +60,22 @@ const Home: React.FC<Props> = ({ history }) => {
       </p>
       <header className="header">Styret 2022</header>
       <img src={styrebilde} alt="test" className="styrebilde"></img>
-      <Table>
+      <Table className={classes.Table}>
         <TableBody>
           {styremedlemmer.map((member) => (
             <TableRow key={member.Navn} className="Table">
-              <TableCell className="personBilde">
+              <TableCell
+                className="personBilde"
+                style={{ borderBottom: "none" }}
+              >
                 <img
                   src={member.Bilde}
                   alt="test"
                   className="personBilde"
                 ></img>
               </TableCell>
-              <TableCell>
-                <p>{member.Navn}</p>
+              <TableCell style={{ borderBottom: "none" }}>
+                <header className="subHeader">{member.Navn}</header>
                 <p>{member.Tekst}</p>
               </TableCell>
             </TableRow>
@@ -74,5 +86,14 @@ const Home: React.FC<Props> = ({ history }) => {
     </div>
   );
 };
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    Table: {
+      width: "80%",
+      margin: "auto",
+    },
+  })
+);
 
 export default Home;

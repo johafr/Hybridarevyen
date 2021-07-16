@@ -23,6 +23,14 @@
   color: #0e2c8b;
 }
 
+.subHeader {
+  font-family: "Open Sans", sans-serif;
+
+  text-align: center;
+  font-size: 40px;
+  color: #0e2c8b;
+}
+
 .intro {
   font-family: "Open Sans", sans-serif;
   margin-right: 100px;
@@ -39,10 +47,6 @@
 
 .personBilde {
   max-width: 100%;
-}
-
-.Table {
-  padding: 90%;
 }
 
 .App-link {
