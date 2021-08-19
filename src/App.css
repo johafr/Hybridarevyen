@@ -64,6 +64,8 @@
 .styrebilde {
   max-width: 70%;
   padding: 15%;
+  margin-top: -10%;
+  margin-bottom: -10%;
 }
 
 .personBilde {
