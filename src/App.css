@@ -23,12 +23,33 @@
   color: #0e2c8b;
 }
 
+.bottomPicture {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.topp1 {
+  width: 100%;
+}
+
 .subHeader {
   font-family: "Open Sans", sans-serif;
 
-  text-align: center;
-  font-size: 40px;
+  text-align: left;
+  font-size: 50px;
   color: #0e2c8b;
+  margin-left: 250px;
+}
+
+.Table {
+  height: 300px;
+}
+
+.description {
+  font-family: "Open Sans", sans-serif;
+  color: #0e2c8b;
+  font-size: 16px;
+  margin-left: 250px;
 }
 
 .intro {
@@ -46,7 +67,31 @@
 }
 
 .personBilde {
-  max-width: 100%;
+  width: 250px;
+  height: 281px;
+  position: absolute;
+}
+
+.personBilde2 {
+  width: 250px;
+  height: 281px;
+  opacity: 0;
+  position: absolute;
+}
+
+.personBilde2:hover {
+  width: 250px;
+  height: 281px;
+  opacity: 1 !important;
+}
+
+.bildeCell {
+  width: 250px;
+  position: top;
+}
+
+.content {
+  margin-left: 250px;
 }
 
 .App-link {
