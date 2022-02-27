@@ -1,28 +1,28 @@
 import React from "react";
 //import AppBar from "../components/AppBar";
 import { History } from "history";
-import styrebilde from "../styrebilde.jpg";
-import header from "../header.jpg";
-import bottom from "../bottom.jpg";
+import styrebilde from "../bilderr/styrebilde.jpg";
+import header from "../bilderr/header.jpg";
+import bottom from "../bilderr/bottom.jpg";
 
-import Casper1 from "../bilder/Casper1.jpg";
-import Casper2 from "../bilder/Casper2.jpg";
-import Elise1 from "../bilder/Elise1.jpg";
-import Elise2 from "../bilder 2/Elise2.jpg";
-import Helene1 from "../bilder/Helene1.jpg";
-import Helene2 from "../bilder 2/Helene2.jpg";
-import Johannes1 from "../bilder/Johannes1.jpg";
-import Johannes2 from "../bilder 2/Johannes2.jpg";
-import Oscar1 from "../bilder/Oscar1.jpg";
-import Oscar2 from "../bilder 2/Oscar2.jpg";
-import Rebecca1 from "../bilder/Rebecca1.jpg";
-import Rebecca2 from "../bilder/Rebecca2.jpg";
-import Torkil1 from "../bilder/Torkil1.jpg";
-import Torkil2 from "../bilder 2/Torkil2.jpg";
-import Ida1 from "../bilder 2/Ida1.jpg";
-import Ida2 from "../bilder 2/Ida2.jpg";
-import Sigurd1 from "../bilder 2/Sigurd1.jpg";
-import Sigurd2 from "../bilder 2/Sigurd2.jpg";
+import Casper1 from "../bilderr/bilder/Casper1.jpg";
+import Casper2 from "../bilderr/bilder/Casper2.jpg";
+import Elise1 from "../bilderr/bilder/Elise1.jpg";
+import Elise2 from "../bilderr/bilder 2/Elise2.jpg";
+import Helene1 from "../bilderr/bilder/Helene1.jpg";
+import Helene2 from "../bilderr/bilder 2/Helene2.jpg";
+import Johannes1 from "../bilderr/bilder/Johannes1.jpg";
+import Johannes2 from "../bilderr/bilder 2/Johannes2.jpg";
+import Oscar1 from "../bilderr/bilder/Oscar1.jpg";
+import Oscar2 from "../bilderr/bilder 2/Oscar2.jpg";
+import Rebecca1 from "../bilderr/bilder/Rebecca1.jpg";
+import Rebecca2 from "../bilderr/bilder/Rebecca2.jpg";
+import Torkil1 from "../bilderr/bilder/Torkil1.jpg";
+import Torkil2 from "../bilderr/bilder 2/Torkil2.jpg";
+import Ida1 from "../bilderr/bilder 2/Ida1.jpg";
+import Ida2 from "../bilderr/bilder 2/Ida2.jpg";
+import Sigurd1 from "../bilderr/bilder 2/Sigurd1.jpg";
+import Sigurd2 from "../bilderr/bilder 2/Sigurd2.jpg";
 
 import {
   createStyles,
