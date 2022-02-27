@@ -1,5 +1,5 @@
 import React from "react";
-//import AppBar from "../components/AppBar";
+import AppBar from "../components/AppBar";
 import { History } from "history";
 import styrebilde from "../styrebilde.jpg";
 import header from "../header.jpg";
@@ -110,7 +110,7 @@ const Home: React.FC<Props> = ({ history }) => {
   const classes = useStyles();
   return (
     <div>
-      {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
+      {/* <AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar> */}
       <img src={header} alt="test" className="topp1"></img>
       <header className="header">Om oss</header>
       <p className="intro">
