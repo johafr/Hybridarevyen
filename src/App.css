@@ -23,14 +23,28 @@
   color: #0e2c8b;
 }
 
+.undergrupperheader {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #0e2c8b;
+}
+
+.undergruppebilde {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+
 .bottomPicture {
   margin-top: 30px;
   width: 100%;
 }
 
 .topp1 {
-  width: 60%;
-  margin: auto;
+  margin-left: 20%;
+  margin-right: auto;
+  width: 50%;
 }
 
 .subHeader {

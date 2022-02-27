@@ -8,6 +8,7 @@ import kose from "../bilderr/undergrupper/kose.jpg";
 import skuespiller from "../bilderr/undergrupper/skuespiller.jpg";
 import manus from "../bilderr/undergrupper/manus.jpg";
 import band from "../bilderr/undergrupper/band.jpg";
+import logo from "../bilderr/logo.png";
 
 import {
   createStyles,
@@ -24,7 +25,7 @@ import {
 
 const groups = [
   {
-    bilde: band,
+    Bilde: band,
     Navn: "PR",
     Tekst:
       "Revysjef har, som du garantert skjønner, det øverste ansvaret for at Hybridarevyen går bra for seg. Men det klart viktigste ansvaret mitt er at du skal ha en fantastisk tid mens du holder på med Revyen. Du kommer både til å se og høre meg ofte, og ikke se bort ifra at vi kommer til å slå av en prat også! Revyen er et resultat av det unike samholdet som skapes gjennom jobbing og sosiale aktiviteter. Bli med da vel, du kommer ikke til å angre!",
@@ -70,19 +71,26 @@ const Undergrupper: React.FC<Props> = ({}) => {
   const classes = useStyles();
   return (
     <div>
-      <img src={header} alt="test" className="topp1"></img>
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={6} md={6} sx={{ display: "flex" }}>
-          <Card
-            sx={{
-              height: "100%",
-            }}
-          ></Card>
-        </Grid>
+      <img src={logo} alt="test" className="topp1"></img>
+
+      <header className="header">Undergrupper</header>
+      <Grid item xs={12} sm={4} md={12}>
+        <Card>
+          <Grid container spacing={3}>
+            {groups.map((group) => (
+              <Grid key={group.Navn} item xs={12} sm={4} md={4}>
+                <CardContent>
+                  <h2 className="undergrupperheader">{group.Navn}</h2>
+                  <p>{group.Tekst}</p>
+                  <img src={group.Bilde} className="topp1" />
+                </CardContent>
+              </Grid>
+            ))}
+          </Grid>
+        </Card>
       </Grid>
-      {/* 
-      <header className="header">Styret 2022</header>
-      <Table className={classes.Table}>
+
+      {/* <Table className={classes.Table}>
         <TableBody>
           {groups.map((gruppe) => (
             <TableRow key={gruppe.Navn} className="Table">
@@ -102,8 +110,8 @@ const Undergrupper: React.FC<Props> = ({}) => {
           ))}
           ;
         </TableBody>
-      </Table>
-      <img src={bottom} alt="test" className="bottomPicture"></img> */}
+      </Table> */}
+      <img src={bottom} alt="test" className="bottomPicture"></img>
     </div>
   );
 };
