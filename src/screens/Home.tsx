@@ -2,9 +2,9 @@ import React from "react";
 //import AppBar from "../components/AppBar";
 import { History } from "history";
 import styrebilde from "../bilderr/styrebilde.jpg";
-import header from "../bilderr/header.jpg";
+import logo from "../bilderr/logo.png";
 import bottom from "../bilderr/bottom.jpg";
-
+import ReactPlayer from "react-player";
 import Casper1 from "../bilderr/bilder/Casper1.jpg";
 import Casper2 from "../bilderr/bilder/Casper2.jpg";
 import Elise1 from "../bilderr/bilder/Elise1.jpg";
@@ -33,6 +33,7 @@ import {
   TableRow,
   Theme,
 } from "@material-ui/core";
+import { isPropertySignature } from "typescript";
 
 interface Props {
   history: History<any>;
@@ -111,7 +112,10 @@ const Home: React.FC<Props> = ({ history }) => {
   return (
     <div>
       {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
-      <img src={header} alt="test" className="topp1"></img>
+      <ReactPlayer url= 'https://www.youtube.com/watch?v=67ulkWeWlNM'
+      playing={true}
+       />
+        
       <header className="header">Om oss</header>
       <p className="intro">
         I år har Hybrida stått på for å få igang en revy for aller første gang!
