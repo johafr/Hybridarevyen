@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import Home from "./screens/Home";
 import OmOss from "./screens/OmOss";
-import { createMuiTheme } from "@material-ui/core";
 
 export interface defaultProps extends RouteComponentProps {}
 
