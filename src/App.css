@@ -1,111 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: skyblue;
 }
 
 .header {
-  font-family: "Open Sans", sans-serif;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
 
+button {
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(129, 129, 196);
+  color: #eee;
+  border: none;
+  border-radius: 20rem;
+  cursor: pointer;
+  transition: 0.2s;
+  height: 3rem;
+  width: 15rem;
+  font-size: 1rem;
+}
+
+.promo {
+  margin-left: 34%;
+}
+
+.scroll {
+  margin-left: 52%;
+}
+
+.about {
   text-align: center;
-  font-size: 100px;
-  color: #0e2c8b;
+}
+
+hr {
+  background-image: linear-gradient(
+    to right,
+    rgb(18, 118, 131),
+    #21539e,
+    rgb(18, 118, 131)
+  );
+  width: 30%;
+  height: 5px;
+}
+
+.main_box {
+  background-color: white;
+  margin: 5rem 5rem 10rem 10rem;
+  color: #fff;
+  padding: 15px 40px 40px 40px;
+  width: 70%;
+  height: 75%;
+  min-width: 300px;
+  border-radius: 15px;
+}
+
+.sub_box {
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: orange;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-style: 18px !important;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.front {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottomPicture {
-  margin-top: 30px;
-  width: 100%;
-}
-
-.topp1 {
-  width: 60%;
-  margin: auto;
-}
-
-.subHeader {
-  font-family: "Open Sans", sans-serif;
-
-  text-align: left;
-  font-size: 50px;
-  color: #0e2c8b;
-  margin-left: 250px;
-}
-
-.Table {
-  height: 300px;
-}
-
-.description {
-  font-family: "Open Sans", sans-serif;
-  color: #0e2c8b;
-  font-size: 16px;
-  margin-left: 250px;
-}
-
-.intro {
-  font-family: "Open Sans", sans-serif;
-  margin-right: 100px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: 25px;
-  color: #0e2c8b;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .styrebilde {
-  max-width: 70%;
-  padding: 15%;
-  margin-top: -10%;
-  margin-bottom: -10%;
-}
-
-.personBilde {
-  width: 250px;
-  height: 281px;
-  position: absolute;
-}
-
-.personBilde2 {
-  width: 250px;
-  height: 281px;
-  opacity: 0;
-  position: absolute;
-}
-
-.personBilde2:hover {
-  width: 250px;
-  height: 281px;
-  opacity: 1 !important;
-}
-
-.bildeCell {
-  width: 250px;
-  position: top;
-}
-
-.content {
-  margin-left: 250px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 20px;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 //import AppBar from "../components/AppBar";
 import { History } from "history";
+import { Link } from "react-router-dom";
 import styrebilde from "../bilderr/styrebilde.jpg";
 import logo from "../bilderr/logo.png";
 import bottom from "../bilderr/bottom.jpg";
@@ -112,15 +113,27 @@ const Home: React.FC<Props> = ({ history }) => {
   return (
     <div>
       {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
-      <ReactPlayer url= 'https://www.youtube.com/watch?v=67ulkWeWlNM'
-      playing={true}
-       />
-        
-      <header className="header">Om oss</header>
-      <p className="intro">
+      
+      <div className="front">
+        <img className="header" src={logo} ></img>
+       </div>
+      <div className="btns">
+      <a href="https://www.youtube.com/watch?v=67ulkWeWlNM"><button className="promo" >SE PROMOVIDEOEN VÅR HER</button></a>
+      <a href="https://www.youtube.com/watch?v=67ulkWeWlNM"><button className="scroll" >KJØP BILETTER</button></a>
+      </div>
+
+
+    <div className="main_box">
+      <div className="sub_box">
+      <h1>Om oss</h1>
+      <hr/>
+      <p>
         I år har Hybrida stått på for å få igang en revy for aller første gang!
         På bilde ser du oss i revystyret. Men det er ikke så viktig. Det viktige
-        er at vi trenger deg for å få til en skikkelig bra revy. For selv om vi
+        er at vi trenger deg for å få til en skikkelig bra revy. 
+      </p>
+      <p>
+      For selv om vi
         brenner veldig for å få til en revy, er ikke dette noe vi kan klare
         alene. Så hva kan du hjelpe til med i en revy spør du? Alt, absolutt
         alt, nesten. Vi trenger hvert fall folk til både små og store verv. Er
@@ -129,7 +142,9 @@ const Home: React.FC<Props> = ({ history }) => {
         band, PR-gruppe, kosegruppe, manusgruppe, scenegruppe. Det beste? Revyen
         har plass til alle som vil. Enten du har mye tid for hånd og vil
         dypdykke deg inn i revyarbeidet, eller om du kanskje ikke har så mye
-        tid, men vil hjelpe til der det trengs, null problem! Å få til en bra
+        tid, men vil hjelpe til der det trengs, null problem!
+      </p>
+       <p>  Å få til en bra
         revy er selvfølgelig dritkult, men enda kulere er det å få til masse
         sosialt for hybrider og skape et godt sosialt miljø for alle som vil
         delta! Så enten du ønsker en stor skuespillerrolle, vil lage kostymer,
@@ -137,40 +152,13 @@ const Home: React.FC<Props> = ({ history }) => {
         eller være ledningssorterer så håper vi at du benytter muligheten til å
         bli med i dette fantastiske felleskapet Hybridarevyen skal være!
       </p>
+      </div>
       <header className="header">Styret 2022</header>
       <img src={styrebilde} alt="test" className="styrebilde"></img>
-      <Table className={classes.Table}>
-        <TableBody>
-          {styremedlemmer.map((member) => (
-            <TableRow key={member.Navn} className="Table">
-              <TableCell
-                className="personBilde"
-                style={{
-                  borderBottom: "none",
-                }}
-              >
-                <img
-                  src={member.Bilde}
-                  alt="test"
-                  className="personBilde"
-                ></img>
-                <img
-                  src={member.hoverBilde}
-                  alt="test"
-                  className="personBilde2"
-                ></img>
-              </TableCell>
-              <TableCell style={{ borderBottom: "none" }} className="content">
-                <header className="subHeader">{member.Navn}</header>
-                <p className="description">{member.Tekst}</p>
-              </TableCell>
-            </TableRow>
-          ))}
-          ;
-        </TableBody>
-      </Table>
-      <img src={bottom} alt="test" className="bottomPicture"></img>
     </div>
+    
+    <img src={bottom} alt="test" className="bottomPicture"></img>
+  </div>
   );
 };
 
