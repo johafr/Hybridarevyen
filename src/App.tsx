@@ -11,6 +11,7 @@ import OmOss from "./screens/OmOss";
 import Undergrupper from "./screens/Undergrupper";
 import Footer from "./components/footer/Footer";
 import Program from "./screens/Program";
+import Images from "./screens/Images";
 
 export interface defaultProps extends RouteComponentProps {}
 
@@ -31,6 +32,7 @@ const App: React.FC = () => {
             exact
             render={props => <Program {...props} />}
           />
+          <Route path="/Images" exact render={props => <Images {...props} />} />
         </Switch>
       </BrowserRouter>
       <Footer />
