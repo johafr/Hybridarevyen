@@ -9,6 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { inherits } from "util";
 import { useHistory } from "react-router-dom";
+import logo from "../bilderr/logo.png";
 
 export default function NavBar() {
   let history = useHistory();
@@ -29,7 +30,9 @@ export default function NavBar() {
           >
             Program
           </Button>
-          <Typography
+
+          {/* KUN DER DET STÅR HYBRIDAREVYEN */}
+          {/* <Typography
             variant="h6"
             color="inherit"
             component="div"
@@ -38,7 +41,11 @@ export default function NavBar() {
             <Link href="/" color="inherit">
               Hybridarevyen 2022
             </Link>
-          </Typography>
+          </Typography> */}
+
+          <Link href="/" color="inherit">
+            <img className="navbar-logo" src={logo} />
+          </Link>
           <Button
             variant="text"
             style={{

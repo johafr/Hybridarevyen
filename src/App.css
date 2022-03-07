@@ -192,6 +192,7 @@ h2 {
   border-radius: 20%;
   margin-top: 25px;
   margin-left: 10%;
+  margin-bottom: 10%;
 }
 
 .undergruppebilder {
@@ -265,4 +266,21 @@ h2 {
   float: "right";
   transition: "0.2s";
   color: white;
+}
+
+.actors {
+  position: "center";
+  margin-left: "20%";
+  margin-right: "20%";
+}
+
+.actors-pic {
+  height: 100px;
+  width: 100px;
+  position: "center";
+}
+
+.navbar-logo {
+  height: 70px;
+  width: 70px;
 }

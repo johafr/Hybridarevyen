@@ -11,6 +11,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Undergruppe from "../screens/Undergrupper";
 import NavBar from "../components/NavBar";
+import Actors from "../components/Actors";
 import Footer from "../components/footer/Footer";
 
 import {
@@ -20,7 +21,7 @@ import {
   TableBody,
   TableCell,
   TableRow,
-  Theme
+  Theme,
 } from "@material-ui/core";
 import { isPropertySignature } from "typescript";
 
@@ -72,6 +73,9 @@ const Home: React.FC<Props> = ({ history }) => {
         <header className="header">Styret 2022</header>
         <img src={styrebilde} alt="test" className="styrebilde"></img>
       </div>
+      <div className="actors">
+        <Actors />
+      </div>
       <Undergruppe />
     </div>
   );
@@ -81,8 +85,8 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     Table: {
       width: "80%",
-      margin: "auto"
-    }
+      margin: "auto",
+    },
   })
 );
 
