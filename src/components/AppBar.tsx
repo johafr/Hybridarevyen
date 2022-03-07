@@ -7,7 +7,7 @@ import {
   Typography,
   Toolbar,
   Button,
-  Paper,
+  Paper
 } from "@material-ui/core";
 //import HomeIcon from "@material-ui/icons";
 import Revylogo from "../SDoneline.png";
@@ -40,17 +40,17 @@ const AppBar: React.FC<AppBarProps> = ({ onOmOss, history }) => {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     Toolbar: {
-      backgroundColor: "#0A36AF",
+      backgroundColor: "#01529d",
       position: "static",
       boxShadow: "0px 4px 5px -5px",
-      marginBottom: theme.spacing(0.2),
+      marginBottom: theme.spacing(0.2)
     },
     Button: {},
     header: {
       margin: "auto",
       marginBottom: theme.spacing(2),
-      marginTop: theme.spacing(2),
-    },
+      marginTop: theme.spacing(2)
+    }
   })
 );
 
