@@ -166,3 +166,45 @@ p {
 .App-link {
   color: #61dafb;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: skyblue;
+  }
+
+  .main_box {
+    background-color: white;
+    margin: 1rem 1rem 1rem 1rem;
+    color: #fff;
+    padding: 15px 40px 40px 20px;
+    width: 70%;
+    height: 75%;
+    min-width: 300px;
+    border-radius: 15px;
+  }
+
+  .promo {
+    margin-left: 9%;
+  }
+
+  .scroll {
+    margin-left: 52%;
+  }
+
+  button {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(129, 129, 196);
+    color: #eee;
+    border: none;
+    border-radius: 20rem;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+  }
+}

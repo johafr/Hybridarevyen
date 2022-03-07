@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import styrebilde from "../bilderr/styrebilde.jpg";
 import logo from "../bilderr/logo.png";
 import bottom from "../bilderr/bottom.jpg";
-import ReactPlayer from "react-player";
-import { FaBeer } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 
@@ -37,7 +35,7 @@ const Home: React.FC<Props> = ({ history }) => {
         <img className="header" src={logo} ></img>
        </div>
       <div className="btns">
-      <a href="https://www.youtube.com/watch?v=67ulkWeWlNM"><button className="promo" >SE PROMOVIDEOEN VÅR HER</button></a>
+      <a href="https://www.youtube.com/watch?v=67ulkWeWlNM"><button className="promo" >PROMOVIDEOEN</button></a>
       <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I"><button className="scroll" >KJØP BILETTER</button></a>
       </div>
 
@@ -47,30 +45,15 @@ const Home: React.FC<Props> = ({ history }) => {
       <h1>Om oss</h1>
       <hr/>
       <p>
-        I år har Hybrida stått på for å få igang en revy for aller første gang!
-        På bilde ser du oss i revystyret. Men det er ikke så viktig. Det viktige
-        er at vi trenger deg for å få til en skikkelig bra revy. 
+      For første gang i verdenshistorien arrangerer studentene ved Ingeniørvitenskap & IKT ved NTNU en revy! 
       </p>
-      <p>
-      For selv om vi
-        brenner veldig for å få til en revy, er ikke dette noe vi kan klare
-        alene. Så hva kan du hjelpe til med i en revy spør du? Alt, absolutt
-        alt, nesten. Vi trenger hvert fall folk til både små og store verv. Er
-        det en ting vi kan garantere, så er virkelig gode muligheter til å bli
-        kjent med folk på linja! Revyen består av oss i styret, skuespillere,
-        band, PR-gruppe, kosegruppe, manusgruppe, scenegruppe. Det beste? Revyen
-        har plass til alle som vil. Enten du har mye tid for hånd og vil
-        dypdykke deg inn i revyarbeidet, eller om du kanskje ikke har så mye
-        tid, men vil hjelpe til der det trengs, null problem!
-      </p>
-       <p>  Å få til en bra
-        revy er selvfølgelig dritkult, men enda kulere er det å få til masse
-        sosialt for hybrider og skape et godt sosialt miljø for alle som vil
-        delta! Så enten du ønsker en stor skuespillerrolle, vil lage kostymer,
-        planlegge revyfester, snekre rekvisitter, spille tuba, temme slanger
-        eller være ledningssorterer så håper vi at du benytter muligheten til å
-        bli med i dette fantastiske felleskapet Hybridarevyen skal være!
-      </p>
+
+      <p>Revyen er et resultatet av arbeidet til over 100 revyglade studenter, og det er med stolthet vi kan invitere nettopp deg til Verkstedhallen for å bivåne resultatet i egen person!
+      Bare Revy har ingen aldersgrense, hverken øvre eller nede. Den inneholder med andre ord noe for alle. Kom da vel, så får du ta del i et lite stykke av verdenshistorien!
+      Billetter slippes 14. februar Kl: 14:00!</p>
+
+      <p>Vel møtt, vi sees!</p>
+      
       </div>
       <header className="header">Styret 2022</header>
       <img src={styrebilde} alt="test" className="styrebilde"></img>
