@@ -10,6 +10,8 @@ import { FaBeer } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Undergruppe from "../screens/Undergrupper";
+import NavBar from "../components/NavBar";
+import Footer from "../components/footer/Footer";
 
 import {
   createStyles,
@@ -30,6 +32,7 @@ const Home: React.FC<Props> = ({ history }) => {
   const classes = useStyles();
   return (
     <div>
+      <NavBar />
       {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
 
       <div className="front">

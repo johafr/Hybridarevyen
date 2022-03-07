@@ -73,7 +73,6 @@ const groups = [
       "6 Kosegruppa lager fester, kos og jammer! Det er en gruppe full av koselige personer som har gjort sitt aller beste for å gjøre revyen gøy for alle, koselig sett. Kosen vår har lyst opp ansikter mange ganger de siste månedene og vi kommer til å savne å kunne gjøre det… MEN nå er det revvvyyy og håper dere koser dere som bare rakkern!!!!",
   },
   {
-    // ikke bilde her
     Bilde: dans,
     Reverse: true,
     Navn: "Dans",
@@ -177,7 +176,6 @@ const Undergrupper: React.FC<any> = ({ history }) => {
           </>
         ))}
       </Grid>
-      <img src={bottom} alt="test" className="bottomPicture"></img>
     </div>
     // <Table>
     //   <TableBody>
