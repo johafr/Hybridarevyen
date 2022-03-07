@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import { defaultProps } from "../App";
 import NavBar from "../components/NavBar";
 import { Typography } from "@mui/material";
+import "./Program.css";
 
 interface props extends defaultProps {}
 
@@ -22,52 +23,212 @@ const OmOss: React.FC<props> = () => {
       >
         <Box
           sx={{
+            justifyContent: "center",
             display: "flex",
             flexWrap: "wrap",
             "& > :not(style)": {
               m: 1,
-              width: 500,
+              width: "55%",
               height: "auto",
               minHeight: 500
             }
           }}
         >
           <Paper elevation={24}>
-            <Grid
-              container
-              spacing={0}
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Typography variant="h3">Program</Typography>
+            <Grid container justifyContent="center">
+              <Box m={2}>
+                <Typography variant="h3">Program</Typography>
+              </Box>
             </Grid>
-            <Box m={3}>
-              <Typography>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-                Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
-                Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error
-                sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam, nisi ut
-                aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur?"
-              </Typography>
+            <Box m={4}>
+              <Grid container className="divide-container" spacing={4}>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Tim og Shænko</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <Typography variant="subtitle1" paragraph>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    commodo dui nibh, nec placerat eros lacinia sed. Vestibulum
+                    luctus euismod erat id congue. Duis eget euismod felis.
+                    Proin ac auctor ligula, venenatis tincidunt dui. Integer ut
+                    tortor a risus dapibus tempus. Donec hendrerit sit amet elit
+                    sit amet faucibus. Nulla diam nibh, auctor non magna a,
+                    efficitur ornare elit. Donec vestibulum pellentesque orci et
+                    imperdiet. Donec sit amet dui eu erat pulvinar faucibus.
+                    Integer congue commodo sapien id maximus. Cras tempor
+                    posuere tincidunt. Maecenas pulvinar vel enim sed
+                    vestibulum. Donec fermentum erat non dui euismod suscipit.
+                    Aenean consectetur tempus lorem ut maximus. Phasellus
+                    consectetur metus dapibus neque tristique commodo. Phasellus
+                    id urna consectetur, placerat felis eget, ultrices sem.
+                  </Typography>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Wifi-passord</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Musikkprodusenten</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Meeen-sketsjen</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Hvitløk er digg ass</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Sketsjen hvor gutta røyker og blir høye</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Helsestasjon-sketsjen</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Vekterhøyskolen</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Baggen</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Ingen Kim(s) ingen kos</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Sketsjen hvor gutta er på tur i skogen</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Knullegutta</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Referansegruppe...</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Hjeeeeelp</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Alt går til helvette</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>PAUSE</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Sketsjen der alt er fett og null stress</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Helene skal bytte studie og tester ut nytt materiale</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Begravelsen</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Jobbintervjuet</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>
+                    Når man mister gode venner til dumme verv man ikke er med i
+                    selv
+                  </h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Sketsjen med moshpit</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Forbudt kjærlighet</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>LEGENDEN</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Fortellingen om en het kveld på sal</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>En heeelt vanlig flytur</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>Sketsjen fra gründer expo 2022</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>"Vi har et stort problem i bedriften"-sketsjen</h3>
+                </Grid>
+                <Grid className="divide-container" item xs={12} sm={6} md={6}>
+                  <h3>hei</h3>
+                </Grid>
+              </Grid>
             </Box>
           </Paper>
         </Box>
