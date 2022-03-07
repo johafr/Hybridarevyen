@@ -9,6 +9,7 @@ import {
 import Home from "./screens/Home";
 import OmOss from "./screens/OmOss";
 import Undergrupper from "./screens/Undergrupper";
+import Footer from "./components/footer/Footer";
 
 export interface defaultProps extends RouteComponentProps {}
 
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <Route path="/OmOss" exact render={(props) => <OmOss {...props} />} />
         </Switch>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 };
