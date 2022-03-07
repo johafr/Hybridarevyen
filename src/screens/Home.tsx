@@ -52,7 +52,6 @@ const Home: React.FC<Props> = ({ history }) => {
           <h1>Om oss</h1>
           <hr />
           <p>
-<<<<<<< HEAD
           For første gang i verdenshistorien arrangerer studentene ved Ingeniørvitenskap & IKT ved NTNU en revy! Revyen er et resultatet av arbeidet til over 100 revyglade studenter, og det er med stolthet vi kan invitere nettopp deg til Verkstedhallen for å bivåne resultatet i egen person!
           </p>
           <p>
@@ -62,23 +61,6 @@ const Home: React.FC<Props> = ({ history }) => {
           Billetter slippes 14. februar Kl: 14:00!
           <br></br>
           Vel møtt, vi sees!
-=======
-            For første gang i verdenshistorien arrangerer studentene ved
-            Ingeniørvitenskap & IKT ved NTNU en revy! Revyen er et resultatet av
-            arbeidet til over 100 revyglade studenter, og det er med stolthet vi
-            kan invitere nettopp deg til Verkstedhallen for å bivåne resultatet
-            i egen person!
-          </p>
-          <p>
-            Bare Revy har ingen aldersgrense, hverken øvre eller nede. Den
-            inneholder med andre ord noe for alle. Kom da vel, så får du ta del
-            i et lite stykke av verdenshistorien!
-          </p>
-          <p>
-            Billetter slippes 14. februar Kl: 14:00!
-            <br />
-            Vel møtt, vi sees!
->>>>>>> 141fa834de047d613c3c9f594116fba9103689ea
           </p>
         </div>
         <header className="header">Styret 2022</header>

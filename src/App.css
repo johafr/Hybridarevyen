@@ -154,6 +154,27 @@ p {
   color: #61dafb;
 }
 
+.undergruppetekst {
+  border: black, 2px;
+}
+
+#gruppe_p {
+  margin-left: 10%;
+}
+
+h2#h2_trans {
+  margin-left: 10%;
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.container {
+  margin: auto;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background: skyblue;
@@ -194,8 +215,6 @@ p {
     width: 10rem;
     font-size: 1rem;
   }
-<<<<<<< HEAD
-=======
 }
 
 /* Undergruppe */
@@ -226,5 +245,4 @@ p {
 
 .undergruppetekst {
   background-color: skyblue;
->>>>>>> 141fa834de047d613c3c9f594116fba9103689ea
 }

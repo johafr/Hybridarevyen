@@ -14,17 +14,18 @@ export default function NavBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit" component="div">
+          <Typography variant="h6" color="inherit" component="div" style={{ marginLeft: "10px"}}>
             Hybridarevyen 2022
           </Typography>
-          <Button variant="text" style={{ color: "black" }}>
+          <Button variant="text" style={{ color: "black" , margin: "auto", marginTop: "20px", 
+    transition: "0.2s"}}>
             Program
           </Button>
-          <Button variant="text" style={{ color: "black" }}>
+          <Button variant="text" style={{ color: "black" , margin: "auto", marginTop: "20px", transition: "0.2s"}}>
             Hvem er vi?
           </Button>
-          <FaFacebook style={{ float: "right" }} />
-          <FaInstagram style={{ float: "right" }} />
+          <FaFacebook style={{ float: "right", padding: "10px", transition: "0.2s"}} href="#" />
+          <FaInstagram style={{ float: "right", padding: "10px", transition: "0.2s" }} href="#" />
         </Toolbar>
       </AppBar>
     </Box>

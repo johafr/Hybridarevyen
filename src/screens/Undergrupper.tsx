@@ -91,7 +91,7 @@ const Undergrupper: React.FC<any> = ({ history }) => {
     //             <Grid key={group.Navn} item xs={12} sm={4} md={4}>
     //               <CardContent className="undergruppecss">
     //                 <h2 className="undergrupperheader">{group.Navn}</h2>
-    //                 <p>{group.Tekst}</p>
+    //                 <p id="gruppe_p">{group.Tekst}</p>
     //                 <img src={group.Bilde} className="undergruppebilde" />
     //               </CardContent>
     //             </Grid>
@@ -120,8 +120,8 @@ const Undergrupper: React.FC<any> = ({ history }) => {
                     key={group.Navn}
                   >
                     <div className="undergruppetekstreverse">
-                      <h2>{group.Navn}</h2>
-                      <p>{group.Tekst}</p>
+                      <h2 id = "h2_trans">{group.Navn}</h2>
+                      <p id="gruppe_p">{group.Tekst}</p>
                     </div>
                   </Grid>
                   <Grid
