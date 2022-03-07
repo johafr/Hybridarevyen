@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 import { defaultProps } from "../App";
 import NavBar from "../components/NavBar";
 import { Typography } from "@mui/material";
-import { RSA_X931_PADDING } from "constants";
 
 interface props extends defaultProps {}
 

@@ -20,7 +20,7 @@ import {
   TableBody,
   TableCell,
   TableRow,
-  Theme,
+  Theme
 } from "@material-ui/core";
 import { isPropertySignature } from "typescript";
 
@@ -81,8 +81,8 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     Table: {
       width: "80%",
-      margin: "auto",
-    },
+      margin: "auto"
+    }
   })
 );
 

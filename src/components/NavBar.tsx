@@ -8,8 +8,11 @@ import { Button } from "@mui/material";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { inherits } from "util";
+import { useHistory } from "react-router-dom";
 
 export default function NavBar() {
+  let history = useHistory();
+
   return (
     <Box sx={{ flexGrow: 1, position: "sticky", top: 0, zIndex: 9999 }}>
       <AppBar position="static" style={{ background: "#01529d" }}>
@@ -22,6 +25,7 @@ export default function NavBar() {
               marginTop: "20px",
               transition: "0.2s",
             }}
+            onClick={(e) => history.push("/program")}
           >
             Program
           </Button>
