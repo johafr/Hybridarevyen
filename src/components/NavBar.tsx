@@ -17,13 +17,6 @@ export default function NavBar() {
           <Typography variant="h6" color="inherit" component="div">
             Hybridarevyen 2022
           </Typography>
-          <Button
-            variant="text"
-            style={{ color: "black" }}
-            href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I"
-          >
-            Kjøp Billett
-          </Button>
           <Button variant="text" style={{ color: "black" }}>
             Program
           </Button>
