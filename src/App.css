@@ -194,4 +194,37 @@ p {
     width: 10rem;
     font-size: 1rem;
   }
+<<<<<<< HEAD
+=======
+}
+
+/* Undergruppe */
+
+.undergruppeheader {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.undergruppebilde {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.undergruppebilder {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.undergruppetekstreverse {
+  color: black;
+}
+
+.undergruppetekst {
+  background-color: skyblue;
+>>>>>>> 141fa834de047d613c3c9f594116fba9103689ea
 }
