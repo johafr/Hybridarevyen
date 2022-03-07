@@ -8,111 +8,194 @@ import kose from "../bilderr/undergrupper/kose.jpg";
 import skuespiller from "../bilderr/undergrupper/skuespiller.jpg";
 import manus from "../bilderr/undergrupper/manus.jpg";
 import band from "../bilderr/undergrupper/band.jpg";
+import dans from "../bilderr/undergrupper/dans.jpg";
 import logo from "../bilderr/logo.png";
 
 import {
   createStyles,
   makeStyles,
-  Table,
-  TableBody,
-  TableCell,
+  Container,
   Grid,
   Card,
   CardContent,
-  TableRow,
   Theme,
+  Table,
+  TableRow,
+  TableCell,
+  TableBody,
+  CardHeader,
 } from "@material-ui/core";
 
 const groups = [
   {
     Bilde: band,
+    Reverse: true,
     Navn: "PR",
-    Tekst:
-      "Revysjef har, som du garantert skjønner, det øverste ansvaret for at Hybridarevyen går bra for seg. Men det klart viktigste ansvaret mitt er at du skal ha en fantastisk tid mens du holder på med Revyen. Du kommer både til å se og høre meg ofte, og ikke se bort ifra at vi kommer til å slå av en prat også! Revyen er et resultat av det unike samholdet som skapes gjennom jobbing og sosiale aktiviteter. Bli med da vel, du kommer ikke til å angre!",
+    Tekst: "MANGLER PR SIN TEKST",
   },
   {
+    // ikke bilde her
     Bilde: kose,
+    Reverse: false,
     Navn: "Kosegruppa",
     Tekst:
-      "Som nestleder er jeg revysjefens høyre hånd. Jeg ønsker at revyen skal være et sted for alle som vil. Selv om målet er revy til våren, så er det viktigste at vi har det gøy mens vi holder på. Jeg er her for å ha oversikt over hva som skjer og hjelpe der det trengs. Det er bare å komme til meg for å slå av en prat, hva enn det skulle være. Revyen trenger alle fra A-Å, så har du lyst har du lov! Søksøksøk! <3",
+      "Kosegruppa lager fester, kos og jammer! Det er en gruppe full av koselige personer som har gjort sitt aller beste for å gjøre revyen gøy for alle, koselig sett. Kosen vår har lyst opp ansikter mange ganger de siste månedene og vi kommer til å savne å kunne gjøre det… MEN nå er det revvvyyy og håper dere koser dere som bare rakkern!!!!",
   },
   {
     Bilde: manus,
+    Reverse: true,
     Navn: "Manus",
     Tekst:
-      "Som scenesjef har jeg ansvar for alt fra kostymer til rekvisitter på scenen. Hvis du ønsker å være med på å forme revyen etter din egen visjon er definitivt scenegruppen noe for deg. Her har du mulighet til å gjøre hva du måtte ønske, enten det er å sy kostymer eller snekre sammen rekvisitter. I tillegg kommer vi selvfølgelig til å ha mye sosialt gøy sammen. Det krever selvfølgelig null forkunnskaper (hvis ikke hadde kanskje ikke jeg sittet her hehe), så hvis du har et ønske om å forme Hybridas aller første revy må du huske å søke scenegruppen!",
+      "Halla mann! Vi er manusgjengen og det er oss som har skrevet denne greia her. Vi har jobbet med sketsjeskriving i et par måneder nå og er riiimelig stoked på å vise det frem til dere (håper det er bra heheh). Vi er en artig clique som trives best i køddehjørnet. Håper sketsjene ikke er for interne og rare tihi. YOLO",
   },
   {
     Bilde: skuespiller,
+    Reverse: false,
     Navn: "Skuespillere",
     Tekst:
-      "Det er lite vits i å ha en revy dersom ingen vet at den finnes. Som PR sjef skal jeg, sammen med en PR-gruppe jeg tar opp, sørge for at flest mulig får vite at Hybrida nå har en revy, og at det er en revy de ønsker å enten jobbe med, eller se på. PR-gruppen omfatter selvfølgelig litt grafisk design og filmlaging, men også ikke-tekniske oppgaver som å planlegge markedsføringen, eventuelle stands, og generelt alle mulige ideer folk skulle ha! Her trengs ingen forkunnskaper, og om du ønsker å lære mer av det tekniske arrangeres det seff opplæring;) Her er det bare å søke enten du er kreativ eller ikke, for PR er som kjent den uoffisielle kosegruppa<3",
+      "Skuespillerne/skådisene/køddegutta det er oss!! Stikkord: lek, impro, sang, dans, generell kødding, rawr. Vi er de som prøver og få dere til å le, og så hadde det jo vært veldig gøy om dere gjorde det også XD. Chill og spill, skådis out",
   },
   {
     Bilde: band,
+    Reverse: true,
     Navn: "Band",
     Tekst:
-      "La oss kalle meg limet i en fantastisk gjeng som skal lage en revy. Ansvarsområdene går i å være inkluderende, planlegge ettertraktede revyfester og hytteturer. Kanskje viktigst skal vi bidra med all mulig kos som kan gjøre samholdet i hele revygjengen bedre! I denne gruppen får du jobbet med kreativiteten din, utvikle vennskap på kryss og tvers og kost deg utrolig masse. Dersom du føler dette er noe som passer for deg, så håper jeg virkelig du søker! Dette blir rått.",
+      "Denne herlige gjengen med meg på bildet er Hybridas aller første Revy-band. De siste 4 månedene har denne gjengen skrevet musikk, øvd inn smakfulle melodier og samspilt alt dette i en svett kjeller på ISAK. Med gjengen her ved min side og et par-3 årsverk med øvingstimer er det ingen tvil om gjengen her vil ta dere gjennnom en musikals reise under Revyen hvor dere får gjennsyn med gamle rockeslagere, disney musikk og kanskje en TV-serei eller to. Grunnmuren her er Daniel og Tobias på bass og trommer. De akkoponeres av Kasper og Boyan på hennodsvis gitar og piano. I front er vår egen blåsedue med Simen og Kasper på trombone og alt saxofon. Et fullkomment revyband!",
   },
 
   {
+    // Ikke bilde her
     Bilde: kose,
+    Reverse: false,
     Navn: "Scene",
+    Tekst: "MANGLER SCENEEEEE",
+  },
+  {
+    Bilde: dans,
+    Reverse: true,
+    Navn: "Dans",
     Tekst:
-      "Som kapellmester har jeg ansvaret for bandet. Under Revyen kommer vi til å spille små snutter mellom sketsjene, og lengre sanger på de musikalske innslagene. Mitt ansvar er å ta opp musikere til den jobben, koke noter og komponere musikk. Vi skal selvfølgelig ha det masse gøy utenom spillingen og! Vi trenger alt fra nasj-gitarister til mestere i Munnspill, så det er bare å prøve seg på opptak i høst! Det blir så lættis.",
+      "Disse søte tullingene er Hybridarevyens dansere 💃🕺 Stephanie, Kaia og Jemima har stått for koreografi, og sammen med Siri, Kristina og Jonas er de blitt the dreamteam 🤩⭐️ Kom på revyen for å se denne fine gjengen svinge og hoie rundt på scenen 🤗",
   },
 ];
 
-interface Props {
-  history: History<any>;
-}
-
-const Undergrupper: React.FC<Props> = ({}) => {
-  const classes = useStyles();
+const Undergrupper: React.FC<any> = ({ history }) => {
   return (
+    // <>
+    //   <img src={logo} alt="test" className="topp1"></img>
+    //   <header className="header2">Undergrupper</header>
+    //   <Grid container spacing={1}>
+    //     <Grid item xs={12} sm={4} md={12}>
+    //       <Card>
+    //         <Grid container spacing={1}>
+    //           {groups.map((group) => (
+    //             <Grid key={group.Navn} item xs={12} sm={4} md={4}>
+    //               <CardContent className="undergruppecss">
+    //                 <h2 className="undergrupperheader">{group.Navn}</h2>
+    //                 <p>{group.Tekst}</p>
+    //                 <img src={group.Bilde} className="undergruppebilde" />
+    //               </CardContent>
+    //             </Grid>
+    //           ))}
+    //         </Grid>
+    //       </Card>
+    //     </Grid>
+    //   </Grid>
+    //   <img src={bottom} alt="test" className="bottomPicture"></img>
+    // </>
     <div>
       <img src={logo} alt="test" className="topp1"></img>
-
-      <header className="header">Undergrupper</header>
-      <Grid item xs={12} sm={4} md={12}>
-        <Card>
-          <Grid container spacing={3}>
-            {groups.map((group) => (
-              <Grid key={group.Navn} item xs={12} sm={4} md={4}>
-                <CardContent>
-                  <h2 className="undergrupperheader">{group.Navn}</h2>
-                  <p>{group.Tekst}</p>
-                  <img src={group.Bilde} className="topp1" />
-                </CardContent>
-              </Grid>
-            ))}
-          </Grid>
-        </Card>
+      <header className="undergruppeheader">Undergrupper</header>
+      <Grid container spacing={5} className="container">
+        {groups.map((group) => (
+          <>
+            {/* Reverse */}
+            {group.Reverse && (
+              <>
+                <Grid container className="container">
+                  <Grid
+                    className="undergruppetekstreverse"
+                    item
+                    xs={12}
+                    sm={6}
+                    md={6}
+                    key={group.Navn}
+                  >
+                    <div className="undergruppetekstreverse">
+                      <h2>{group.Navn}</h2>
+                      <p>{group.Tekst}</p>
+                    </div>
+                  </Grid>
+                  <Grid
+                    className="undergruppecard undergruppecardmainreverse"
+                    item
+                    xs={12}
+                    sm={6}
+                    md={6}
+                    key={group.Bilde}
+                  >
+                    <img className="undergruppebilde" src={group.Bilde} />
+                  </Grid>
+                </Grid>
+              </>
+            )}
+            {/* IkkeReverse */}
+            {group.Reverse == false && (
+              <>
+                <Grid container className="container undergruppecardmaincolor">
+                  <Grid
+                    className="undergruppecard"
+                    item
+                    justify="center"
+                    xs={12}
+                    sm={6}
+                    md={6}
+                    key={group.Bilde}
+                  >
+                    <img className="undergruppebilder" src={group.Bilde} />
+                  </Grid>
+                  <Grid
+                    className="undergruppecard undergruppecardmaincolor"
+                    item
+                    justify="center"
+                    xs={12}
+                    sm={6}
+                    md={6}
+                    key={group.Navn}
+                  >
+                    <div className="undergruppetekstn">
+                      <h2>{group.Navn}</h2>
+                      <p className="undergruppetekst">{group.Tekst}</p>
+                    </div>
+                  </Grid>
+                </Grid>
+              </>
+            )}
+          </>
+        ))}
       </Grid>
-
-      {/* <Table className={classes.Table}>
-        <TableBody>
-          {groups.map((gruppe) => (
-            <TableRow key={gruppe.Navn} className="Table">
-              <TableCell
-                className="personBilde"
-                style={{
-                  borderBottom: "none",
-                }}
-              >
-                <img src={gruppe.Bilde} alt="test" className="personBilde" />
-              </TableCell>
-              <TableCell style={{ borderBottom: "none" }} className="content">
-                <header className="subHeader">{gruppe.Navn}</header>
-                <p className="description">{gruppe.Tekst}</p>
-              </TableCell>
-            </TableRow>
-          ))}
-          ;
-        </TableBody>
-      </Table> */}
-      <img src={bottom} alt="test" className="bottomPicture"></img>
     </div>
+    // <Table>
+    //   <TableBody>
+    //     {groups.map((group) => (
+    //       <TableRow key={group.Navn} className="Table">
+    //         <TableCell
+    //           className="personBilde"
+    //           style={{
+    //             borderBottom: "none",
+    //           }}
+    //         >
+    //           <img src={group.Bilde} alt="test" className="personBilde"></img>
+    //         </TableCell>
+    //         <TableCell style={{ borderBottom: "none" }} className="content">
+    //           <header className="subHeader">{group.Navn}</header>
+    //           <p className="description">{group.Tekst}</p>
+    //         </TableCell>
+    //       </TableRow>
+    //     ))}
+    //     ;
+    //   </TableBody>
+    // </Table>
   );
 };
 
