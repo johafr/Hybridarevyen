@@ -7,7 +7,7 @@ import bottom from "../bilderr/bottom.jpg";
 import kose from "../bilderr/undergrupper/kose.jpg";
 import skuespiller from "../bilderr/undergrupper/skuespiller.jpg";
 import manus from "../bilderr/undergrupper/manus.jpg";
-import band from "../bilderr/undergrupper/band.jpg";
+import band from "../bilderr/undergrupper/band_2.jpg";
 import dans from "../bilderr/undergrupper/dans.jpg";
 import logo from "../bilderr/logo.png";
 
@@ -132,6 +132,7 @@ const Undergrupper: React.FC<any> = ({ history }) => {
                     md={6}
                     key={group.Bilde}
                   >
+                    
                     <img className="undergruppebilde" src={group.Bilde} />
                   </Grid>
                 </Grid>

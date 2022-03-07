@@ -165,10 +165,12 @@ p {
 h2#h2_trans {
   margin-left: 10%;
   text-decoration: underline;
+  margin-top: 10%;
 }
 
 h2 {
   text-decoration: underline;
+  margin-top: 10%;
 }
 
 .container {
@@ -219,24 +221,29 @@ h2 {
 
 /* Undergruppe */
 
-.undergruppeheader {
+/*.undergruppeheader {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-}
+}*/
 
 .undergruppebilde {
   max-height: 90%;
   max-width: 90%;
   object-fit: cover;
-  border-radius: 20%;
+  border-radius: 30%;
+  margin-top: 25px;
+  margin-left: 10%;
 }
 
 .undergruppebilder {
+  margin-top: 20px;
   max-height: 90%;
   max-width: 90%;
+  margin-top: 25px;
   object-fit: cover;
-  border-radius: 20%;
+  border-radius: 30%;
+  margin-left: 10%;
 }
 
 .undergruppetekstreverse {
@@ -244,5 +251,11 @@ h2 {
 }
 
 .undergruppetekst {
-  background-color: skyblue;
+  background-color: white;
+  width: 100%;
+}
+
+.container {
+  max-width: 101.3%;
+  max-height: 100%;
 }
