@@ -189,7 +189,7 @@ h2 {
   max-height: 90%;
   max-width: 90%;
   object-fit: cover;
-  border-radius: 30%;
+  border-radius: 20%;
   margin-top: 25px;
   margin-left: 10%;
 }
@@ -200,7 +200,7 @@ h2 {
   max-width: 90%;
   margin-top: 25px;
   object-fit: cover;
-  border-radius: 30%;
+  border-radius: 20%;
   margin-left: 10%;
 }
 
@@ -258,4 +258,11 @@ h2 {
     width: 10rem;
     font-size: 1rem;
   }
+}
+
+.linkFaceInsta {
+  padding: "10px";
+  float: "right";
+  transition: "0.2s";
+  color: white;
 }

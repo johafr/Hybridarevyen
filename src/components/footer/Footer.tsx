@@ -15,12 +15,12 @@ export const Footer: React.FC = () => {
           den.
         </p>
         <div className="icons">
-          <a href="#">
+          <a href="https://www.facebook.com/hybridarevyen">
             <i>
               <FaFacebook />
             </i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/hybridarevyen">
             <i>
               <FaInstagram />
             </i>
@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="footer-right" style={{float: "right"}}>
+      <div className="footer-right" style={{ float: "right" }}>
         <h2>
           {" "}
           Bare<span style={{ color: "#F64C72" }}>Revy</span>

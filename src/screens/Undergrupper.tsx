@@ -80,28 +80,6 @@ const groups = [
 
 const Undergrupper: React.FC<any> = ({ history }) => {
   return (
-    // <>
-    //   <img src={logo} alt="test" className="topp1"></img>
-    //   <header className="header2">Undergrupper</header>
-    //   <Grid container spacing={1}>
-    //     <Grid item xs={12} sm={4} md={12}>
-    //       <Card>
-    //         <Grid container spacing={1}>
-    //           {groups.map((group) => (
-    //             <Grid key={group.Navn} item xs={12} sm={4} md={4}>
-    //               <CardContent className="undergruppecss">
-    //                 <h2 className="undergrupperheader">{group.Navn}</h2>
-    //                 <p id="gruppe_p">{group.Tekst}</p>
-    //                 <img src={group.Bilde} className="undergruppebilde" />
-    //               </CardContent>
-    //             </Grid>
-    //           ))}
-    //         </Grid>
-    //       </Card>
-    //     </Grid>
-    //   </Grid>
-    //   <img src={bottom} alt="test" className="bottomPicture"></img>
-    // </>
     <div>
       <header className="undergruppeheader">Undergrupper</header>
       <Grid container spacing={5} className="container">
@@ -120,7 +98,7 @@ const Undergrupper: React.FC<any> = ({ history }) => {
                     key={group.Navn}
                   >
                     <div className="undergruppetekstreverse">
-                      <h2 id = "h2_trans">{group.Navn}</h2>
+                      <h2 id="h2_trans">{group.Navn}</h2>
                       <p id="gruppe_p">{group.Tekst}</p>
                     </div>
                   </Grid>
@@ -132,7 +110,6 @@ const Undergrupper: React.FC<any> = ({ history }) => {
                     md={6}
                     key={group.Bilde}
                   >
-                    
                     <img className="undergruppebilde" src={group.Bilde} />
                   </Grid>
                 </Grid>
@@ -174,27 +151,6 @@ const Undergrupper: React.FC<any> = ({ history }) => {
         ))}
       </Grid>
     </div>
-    // <Table>
-    //   <TableBody>
-    //     {groups.map((group) => (
-    //       <TableRow key={group.Navn} className="Table">
-    //         <TableCell
-    //           className="personBilde"
-    //           style={{
-    //             borderBottom: "none",
-    //           }}
-    //         >
-    //           <img src={group.Bilde} alt="test" className="personBilde"></img>
-    //         </TableCell>
-    //         <TableCell style={{ borderBottom: "none" }} className="content">
-    //           <header className="subHeader">{group.Navn}</header>
-    //           <p className="description">{group.Tekst}</p>
-    //         </TableCell>
-    //       </TableRow>
-    //     ))}
-    //     ;
-    //   </TableBody>
-    // </Table>
   );
 };
 
