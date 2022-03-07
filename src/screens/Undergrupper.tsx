@@ -104,7 +104,6 @@ const Undergrupper: React.FC<any> = ({ history }) => {
     //   <img src={bottom} alt="test" className="bottomPicture"></img>
     // </>
     <div>
-      <img src={logo} alt="test" className="topp1"></img>
       <header className="undergruppeheader">Undergrupper</header>
       <Grid container spacing={5} className="container">
         {groups.map((group) => (

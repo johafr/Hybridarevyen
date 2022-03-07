@@ -5,11 +5,6 @@ import { Link } from "react-router-dom";
 import styrebilde from "../bilderr/styrebilde.jpg";
 import logo from "../bilderr/logo.png";
 import bottom from "../bilderr/bottom.jpg";
-<<<<<<< HEAD
-import { FaFacebook } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-
-=======
 import ReactPlayer from "react-player";
 import { FaBeer } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -17,7 +12,6 @@ import { FaInstagram } from "react-icons/fa";
 import Undergruppe from "../screens/Undergrupper";
 import NavBar from "../components/NavBar";
 import Footer from "../components/footer/Footer";
->>>>>>> 49ee9d1c7b5ef94d9353307b4627d292e8857f1c
 
 import {
   createStyles,
