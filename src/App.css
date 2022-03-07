@@ -166,3 +166,62 @@ p {
 .App-link {
   color: #61dafb;
 }
+
+.undergruppeheader {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 70px;
+  color: #0e2c8b;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.undergruppebilde {
+  margin-top: 10px;
+  height: 400px;
+  width: 400px;
+  margin-right: 50%;
+  margin-bottom: 25%;
+}
+
+.undergruppebilder {
+  margin-top: 10px;
+  height: 400px;
+  width: 400px;
+  margin-left: 50%;
+  margin-bottom: 25%;
+  min-height: 200px;
+  min-width: 200px;
+  display: flex;
+}
+
+.undergruppecard {
+  margin: 30%;
+  height: 500px;
+  margin: 50%;
+}
+
+.undergruppecardmaincolor {
+  background-color: #0e2c8b;
+}
+.undergruppecardmainreverse {
+  background-color: white;
+}
+
+.undergruppetekstn {
+  text-align: left;
+  width: 300px;
+  color: white;
+}
+
+.undergruppetekstreverse {
+  text-align: left;
+  width: 300px;
+  color: black;
+  margin-left: 50%;
+}
+
+.container {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
