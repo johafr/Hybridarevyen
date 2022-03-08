@@ -53,8 +53,8 @@ export const Footer: React.FC = () => {
               Bare<span style={{ color: "#F64C72" }}>Revy</span>
             </h2>
             <p className="menu">
-              <a href="#"> Hjem</a> |<a href="#"> Om oss</a> |
-              <a href="#"> Program</a>
+              <a href="/"> Hjem</a> |<a href="/styret"> Om oss</a> |
+              <a href="/program"> Program</a>
             </p>
             <p className="name"> Bare Revy &copy; 2022</p>
           </div>

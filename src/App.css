@@ -406,3 +406,14 @@ h2 {
 .images-div {
   margin-top: 1000px;
 }
+
+/* navbar mobile */
+
+.navbar-mobile {
+  background-color: #01529d;
+}
+
+.hamburger {
+  margin-top: 14px;
+  margin-left: -80px;
+}

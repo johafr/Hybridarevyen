@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { Button } from "@mui/material";
-import { FaFacebook } from "react-icons/fa";
+import { FaAlignLeft, FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { inherits } from "util";
 import { useHistory } from "react-router-dom";
@@ -119,23 +119,10 @@ export default function NavBar() {
         </Box>
       </BrowserView>
       <MobileView>
-        {/* <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static">
-            <Toolbar variant="dense">
-              <Hamburger>
-                <Button>Kjøp Billett</Button>
-                <Button>Program</Button>
-                <Button>Hvem er vi?</Button>
-              </Hamburger>
-              <Link href="/" color="inherit" sx={{ marginLeft: "25%" }}>
-                <img className="navbar-logo" src={logo} />
-              </Link>
-            </Toolbar>
-          </AppBar>
-        </Box> */}
         <AppBar variant="outlined" position="static">
-          <Toolbar>
+          <Toolbar className="navbar-mobile">
             <IconButton
+              className="hamburger"
               edge="start"
               color="inherit"
               aria-label="menu"
@@ -143,9 +130,14 @@ export default function NavBar() {
             >
               <Hamburger />
             </IconButton>
-            <Typography variant="h6">The title</Typography>
-
-            <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+            <Link href="/" color="inherit">
+              <img className="navbar-logo" src={logo} />
+            </Link>
+            <Drawer
+              className="hamburger"
+              open={isDrawerOpen}
+              onClose={() => setIsDrawerOpen(false)}
+            >
               <List className={classes.drawer}>
                 <ListItem button>
                   <ListItemText
@@ -153,23 +145,21 @@ export default function NavBar() {
                     onClick={(e) => history.push("/program")}
                   />
                 </ListItem>
-
                 <ListItem button>
                   <ListItemText
                     primary="Bilder"
                     onClick={(e) => history.push("/Bilder")}
                   />
                 </ListItem>
-
                 <ListItem button>
                   <ListItemText
                     primary="Hvem er vi?"
                     onClick={(e) => history.push("/Styret")}
                   />
                 </ListItem>
-
                 <ListItem button>
                   <ListItemText primary="Kjøp billett" />
+                  <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I" />
                 </ListItem>
               </List>
             </Drawer>
