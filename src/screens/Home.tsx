@@ -62,10 +62,10 @@ const Home: React.FC<Props> = ({ history }) => {
           <p>
             Bare Revy har ingen aldersgrense, hverken øvre eller nede. Den
             inneholder med andre ord noe for alle. Kom da vel, så får du ta del
-            i et lite stykke av verdenshistorien!
+            i et lite stykke av verdenshistorien! Les mer om oss{" "}
+            <a href="/styret"> her</a>.
           </p>
           <p>
-            Billetter slippes 14. februar Kl: 14:00!
             <br></br>
             Vel møtt, vi sees!
           </p>

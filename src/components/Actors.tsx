@@ -51,15 +51,24 @@ const Actors: React.FC<any> = ({ history }) => {
   return (
     <div>
       <div>
-        <h1>Skuespillerne</h1>
+        <h1 className="h1-styret">Skuespillerne</h1>
       </div>
-      <div className="actors">
+      <div className="">
         <Grid container spacing={5} className="actors-container">
           {actors.map((actor) => (
             <>
-              <Grid className="" item xs={12} sm={4} md={4} key={actor.Name}>
-                <img className="actors-pic" src={actor.pic} />
-                <h2 className="actors-name">{actor.Name}</h2>
+              <Grid
+                className="actors-name"
+                item
+                xs={12}
+                sm={4}
+                md={4}
+                key={actor.Name}
+              >
+                <div className="actors-name">
+                  <img className="actors-pic" src={actor.pic} />
+                  <h2 className="actors-name">{actor.Name}</h2>
+                </div>
               </Grid>
             </>
           ))}

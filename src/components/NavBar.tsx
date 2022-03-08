@@ -41,7 +41,6 @@ export default function NavBar() {
                 variant="text"
                 style={{
                   color: "white",
-                  margin: "auto",
                   marginTop: "20px",
                   transition: "0.2s",
                 }}
@@ -53,6 +52,7 @@ export default function NavBar() {
                 variant="text"
                 style={{
                   color: "white",
+                  marginRight: "500px",
                   margin: "auto",
                   marginTop: "20px",
                   transition: "0.2s",
@@ -119,52 +119,54 @@ export default function NavBar() {
         </Box>
       </BrowserView>
       <MobileView>
-        <AppBar variant="outlined" position="static">
-          <Toolbar className="navbar-mobile">
-            <IconButton
-              className="hamburger"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              onClick={() => setIsDrawerOpen(true)}
-            >
-              <Hamburger />
-            </IconButton>
-            <Link href="/" color="inherit">
-              <img className="navbar-logo" src={logo} />
-            </Link>
-            <Drawer
-              className="hamburger"
-              open={isDrawerOpen}
-              onClose={() => setIsDrawerOpen(false)}
-            >
-              <List className={classes.drawer}>
-                <ListItem button>
-                  <ListItemText
-                    primary="Program"
-                    onClick={(e) => history.push("/program")}
-                  />
-                </ListItem>
-                <ListItem button>
-                  <ListItemText
-                    primary="Bilder"
-                    onClick={(e) => history.push("/Bilder")}
-                  />
-                </ListItem>
-                <ListItem button>
-                  <ListItemText
-                    primary="Hvem er vi?"
-                    onClick={(e) => history.push("/Styret")}
-                  />
-                </ListItem>
-                <ListItem button>
-                  <ListItemText primary="Kjøp billett" />
-                  <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I" />
-                </ListItem>
-              </List>
-            </Drawer>
-          </Toolbar>
-        </AppBar>
+        <Box>
+          <AppBar variant="outlined" position="static">
+            <Toolbar className="navbar-mobile">
+              <IconButton
+                className="hamburger"
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                onClick={() => setIsDrawerOpen(true)}
+              >
+                <Hamburger />
+              </IconButton>
+              <Link href="/" color="inherit">
+                <img className="navbar-logo" src={logo} />
+              </Link>
+              <Drawer
+                className="hamburger"
+                open={isDrawerOpen}
+                onClose={() => setIsDrawerOpen(false)}
+              >
+                <List className={classes.drawer}>
+                  <ListItem button>
+                    <ListItemText
+                      primary="Program"
+                      onClick={(e) => history.push("/program")}
+                    />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemText
+                      primary="Bilder"
+                      onClick={(e) => history.push("/Bilder")}
+                    />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemText
+                      primary="Hvem er vi?"
+                      onClick={(e) => history.push("/Styret")}
+                    />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemText primary="Kjøp billett" />
+                    <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I" />
+                  </ListItem>
+                </List>
+              </Drawer>
+            </Toolbar>
+          </AppBar>
+        </Box>
       </MobileView>
     </>
   );
