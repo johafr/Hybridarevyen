@@ -92,23 +92,25 @@ const Undergrupper: React.FC<any> = ({ history }) => {
             {/* Reverse */}
             {group.Reverse && (
               <>
-                <Grid container className="container">
+                <Grid container className="container undergruppetekstreverse">
                   <Grid
-                    className="undergruppetekstreverse"
+                    className=""
                     item
+                    justify="center"
                     xs={12}
                     sm={6}
                     md={6}
                     key={group.Navn}
                   >
-                    <div className="undergruppetekstreverse">
+                    <div className="">
                       <h2 id="h2_trans">{group.Navn}</h2>
-                      <p id="gruppe_p">{group.Tekst}</p>
+                      <p id="gruppe_p2">{group.Tekst}</p>
                     </div>
                   </Grid>
                   <Grid
                     className="undergruppecard undergruppecardreverse"
                     item
+                    justify="center"
                     xs={12}
                     sm={6}
                     md={6}

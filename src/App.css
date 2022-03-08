@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: skyblue;
 }
@@ -174,6 +178,10 @@ h2 {
   margin-top: 10%;
 }
 
+.container {
+  margin-left: 90px;
+}
+
 /* Undergruppe */
 
 /*.undergruppeheader {
@@ -200,65 +208,29 @@ h2 {
   margin-top: 25px;
   object-fit: cover;
   border-radius: 20%;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-bottom: 4%;
 }
 
 .undergruppetekstreverse {
   color: black;
+  margin-right: 10px;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .undergruppetekst {
   background-color: white;
 }
+.undergruppetekst2 {
+  background-color: white;
+}
 
 .container {
-  max-width: 101.3%;
+  max-width: 101.5%;
   max-height: 100%;
   /* margin-left: 20px;
     margin-right: 20px; */
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background: skyblue;
-  }
-
-  .main_box {
-    background-color: white;
-    margin: 1rem 1rem 1rem 1rem;
-    color: #fff;
-    padding: 15px 40px 40px 20px;
-    width: 70%;
-    height: 75%;
-    min-width: 300px;
-    border-radius: 15px;
-  }
-
-  .promo {
-    margin-left: 9%;
-  }
-
-  .scroll {
-    margin-left: 52%;
-  }
-
-  button {
-    position: absolute;
-    bottom: 10px;
-    z-index: 1;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(1, 82, 157);
-    color: #eee;
-    border: none;
-    border-radius: 20rem;
-    cursor: pointer;
-    transition: 0.2s;
-    height: 3rem;
-    width: 10rem;
-    font-size: 1rem;
-  }
 }
 
 .linkFaceInsta {
@@ -403,12 +375,13 @@ h2 {
   text-align: center;
   font-size: 50px;
   color: black;
-  background-color: white;
 }
 
 .undergruppeshit  {
   background-color: white;
   color: white;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .images-div {
@@ -426,6 +399,103 @@ h2 {
   margin-left: -80px;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background: skyblue;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+  .container {
+    max-width: 105.5%;
+    max-height: 80%;
+    /* margin-left: 20px;
+      margin-right: 20px; */
+  }
+
+  .main_box {
+    background-color: white;
+    margin: 1rem 1rem 1rem 1rem;
+    color: #fff;
+    padding: 15px 40px 40px 20px;
+    width: 70%;
+    height: 75%;
+    min-width: 300px;
+    border-radius: 15px;
+  }
+
+  .promo {
+    margin-left: 9%;
+    margin-bottom: 2070%;
+  }
+
+  .scroll {
+    margin-left: 52%;
+    margin-bottom: 2070%;
+  }
+
+  button {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(1, 82, 157);
+    color: #eee;
+    border: none;
+    border-radius: 20rem;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .undergruppebilde {
+    max-height: 90%;
+    max-width: 80%;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-top: 25px;
+    margin-bottom: 4%;
+  }
+
+  h2#h2_trans {
+    /* margin-left: 10%; */
+    text-decoration: underline;
+    margin-top: 10%;
+  }
+
+  p {
+    font-family: Arial, sans-serif;
+    font-style: 18px !important;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    /* font-size: 15px; */
+    padding: 10px;
+  }
+
+  h2 {
+    text-decoration: underline;
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+
+  #gruppe_p {
+    margin-left: 0%;
+    margin-right: 10%;
+  }
+}
+
 .genus-logo {
   object-fit: cover;
   width: 35%;
@@ -436,6 +506,8 @@ h2 {
 .h2-genus {
   position: center;
   text-align: center;
+  margin: 0;
+  padding: 10px;
 }
 
 .h1-actors {
