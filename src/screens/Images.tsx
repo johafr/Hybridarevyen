@@ -27,25 +27,33 @@ const Images: React.FC<props> = () => {
     { Bilde: Casper2 },
     { Bilde: Casper2 },
     { Bilde: Casper2 },
-    { Bilde: Casper2 }
+    { Bilde: Casper2 },
   ];
   return (
-    <div>
+    <div className="">
       <NavBar />
-      <Box sx={{ flexGrow: 1 }}>
+      <Box
+        sx={{
+          flexGrow: 1,
+          marginTop: 2,
+          marginLeft: 2,
+          marginRight: 2,
+          marginBottom: 2,
+        }}
+      >
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          {imgs.map(img => (
+          {imgs.map((img) => (
             <Grid item xs={2} sm={4} md={4}>
               <Card
                 sx={{
                   width: "auto",
                   height: "auto",
                   maxWidth: "100%",
-                  maxHeight: "100%"
+                  maxHeight: "100%",
                 }}
               >
                 <CardMedia

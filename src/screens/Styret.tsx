@@ -124,7 +124,22 @@ const Styret: React.FC<any> = ({ history }) => {
       </p>
       <img src={styrepic} alt="test" className="styret-pic"></img>
       <h1 className="h1-styret">Styret 2022</h1>
-      <Table>
+      <Grid container spacing={2}>
+        {members.map((member) => (
+          <Grid container spacing={1}>
+            <Grid item key={member.Name} xs={4} sm={2} md={2}>
+              <img src={member.pic} alt="test" className="members-pic" />
+              <img src={member.hoverpic} alt="test" className="members-pic2" />
+            </Grid>
+            <Grid item key={member.pic} xs={4} sm={2} md={2}>
+              <header className="subHeader-styret">{member.Name}</header>
+              <p className="description-styret">{member.Text}</p>
+            </Grid>
+          </Grid>
+        ))}
+        ;
+      </Grid>
+      {/* <Table>
         <TableBody>
           {members.map((member) => (
             <TableRow key={member.Name} className="Table">
@@ -153,7 +168,7 @@ const Styret: React.FC<any> = ({ history }) => {
           ))}
           ;
         </TableBody>
-      </Table>
+      </Table> */}
     </div>
   );
 };

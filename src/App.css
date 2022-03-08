@@ -333,12 +333,15 @@ h2 {
 .members-pic {
   width: 250px;
   height: 281px;
+  max-width: 40%;
+  max-height: 20%;
   position: absolute;
 }
 
 .members-pic2 {
   width: 250px;
   height: 281px;
+  max-width: 40%;
   opacity: 0;
   position: absolute;
 }
@@ -385,4 +388,31 @@ h2 {
   text-align: center;
   font-size: 50px;
   color: black;
+}
+
+.h1-undergruppe {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  background-color: white;
+}
+
+.undergruppeshit  {
+  background-color: white;
+  color: white;
+}
+
+.images-div {
+  margin-top: 1000px;
+}
+
+/* NAVBAR - DESKTOP VS MOBILE */
+
+header.Header.Header--top {
+  display: none !important;
+}
+
+[data-nc-base="mobile-bar"] {
+  display: block !important;
 }

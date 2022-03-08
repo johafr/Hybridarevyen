@@ -81,10 +81,10 @@ const groups = [
 
 const Undergrupper: React.FC<any> = ({ history }) => {
   return (
-    <div>
+    <div className="undergruppeshit">
       {/* <header className="undergruppeheader">Undergrupper</header> */}
       <div className="undergruppe-overskrift">
-        <h1>Undergruppene</h1>
+        <h1 className="h1-undergruppe">Undergruppene</h1>
       </div>
       <Grid container spacing={5} className="container">
         {groups.map((group) => (
