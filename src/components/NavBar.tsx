@@ -44,53 +44,8 @@ export default function NavBar() {
           }}
         >
           <AppBar position="static" style={{ background: "#01529d" }}>
-<<<<<<< HEAD
             <Toolbar variant="regular" sx={{ width: "auto" }}>
               <Box sx={{ width: "100%", height: "auto" }}>
-=======
-            <Toolbar variant="regular">
-              <Button
-                variant="text"
-                style={{
-                  color: "white",
-                  marginTop: "20px",
-                  transition: "0.2s",
-                }}
-                onClick={(e) => history.push("/program")}
-              >
-                Program
-              </Button>
-              <Button
-                variant="text"
-                style={{
-                  color: "white",
-                  marginRight: "500px",
-                  margin: "auto",
-                  marginTop: "20px",
-                  transition: "0.2s",
-                }}
-                onClick={(e) => history.push("/Bilder")}
-              >
-                Bilder
-              </Button>
-
-              <Link href="/" color="inherit">
-                <img className="navbar-logo" src={logo} />
-              </Link>
-              <Button
-                variant="text"
-                style={{
-                  color: "white",
-                  margin: "auto",
-                  marginTop: "20px",
-                  transition: "0.2s",
-                }}
-                onClick={(e) => history.push("/styret")}
-              >
-                Hvem er vi?
-              </Button>
-              <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
->>>>>>> 801665bf7c542e632f6fc34c20a8e4a8dc968844
                 <Button
                   variant="text"
                   style={{
