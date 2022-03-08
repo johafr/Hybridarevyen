@@ -414,6 +414,7 @@ h2 {
 
 .navbar-mobile {
   background-color: #01529d;
+  width: "auto";
 }
 
 .hamburger {

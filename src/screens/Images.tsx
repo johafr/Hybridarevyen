@@ -14,6 +14,18 @@ import Johannes1 from "../bildepagebilder/Johannes1.jpg";
 import Rebecca2 from "../bildepagebilder/Rebecca2.jpg";
 import { fontGrid } from "@mui/material/styles/cssUtils";
 
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+
+const images = importAll(
+  require.context("./images", false, /\.(png|jpe?g|svg)$/)
+);
+
 interface props extends defaultProps {}
 
 const Images: React.FC<props> = () => {
@@ -27,7 +39,7 @@ const Images: React.FC<props> = () => {
     { Bilde: Casper2 },
     { Bilde: Casper2 },
     { Bilde: Casper2 },
-    { Bilde: Casper2 },
+    { Bilde: Casper2 }
   ];
   return (
     <div className="">
@@ -38,7 +50,7 @@ const Images: React.FC<props> = () => {
           marginTop: 2,
           marginLeft: 2,
           marginRight: 2,
-          marginBottom: 2,
+          marginBottom: 2
         }}
       >
         <Grid
@@ -46,14 +58,14 @@ const Images: React.FC<props> = () => {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          {imgs.map((img) => (
+          {imgs.map(img => (
             <Grid item xs={2} sm={4} md={4}>
               <Card
                 sx={{
                   width: "auto",
                   height: "auto",
                   maxWidth: "100%",
-                  maxHeight: "100%",
+                  maxHeight: "100%"
                 }}
               >
                 <CardMedia
