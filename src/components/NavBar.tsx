@@ -11,11 +11,25 @@ import { inherits } from "util";
 import { useHistory } from "react-router-dom";
 import logo from "../bilderr/logo.png";
 import { BrowserView, MobileView } from "react-device-detect";
-import IconButton from "@mui/material/IconButton";
 import Hamburger from "hamburger-react";
+import { useState } from "react";
+import Drawer from "@material-ui/core/Drawer";
+import IconButton from "@material-ui/core/IconButton";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  drawer: {
+    width: 250,
+  },
+});
 
 export default function NavBar() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   let history = useHistory();
+  const classes = useStyles();
 
   return (
     <>
@@ -105,27 +119,62 @@ export default function NavBar() {
         </Box>
       </BrowserView>
       <MobileView>
-        <Box sx={{ flexGrow: 1 }}>
+        {/* <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar variant="dense">
-              <IconButton
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-              >
-                <Hamburger>
-                  <Button>Kjøp Billett</Button>
-                  <Button>Program</Button>
-                  <Button>Hvem er vi?</Button>
-                </Hamburger>
-              </IconButton>
-              <Link href="/" color="inherit">
+              <Hamburger>
+                <Button>Kjøp Billett</Button>
+                <Button>Program</Button>
+                <Button>Hvem er vi?</Button>
+              </Hamburger>
+              <Link href="/" color="inherit" sx={{ marginLeft: "25%" }}>
                 <img className="navbar-logo" src={logo} />
               </Link>
             </Toolbar>
           </AppBar>
-        </Box>
+        </Box> */}
+        <AppBar variant="outlined" position="static">
+          <Toolbar>
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={() => setIsDrawerOpen(true)}
+            >
+              <Hamburger />
+            </IconButton>
+            <Typography variant="h6">The title</Typography>
+
+            <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+              <List className={classes.drawer}>
+                <ListItem button>
+                  <ListItemText
+                    primary="Program"
+                    onClick={(e) => history.push("/program")}
+                  />
+                </ListItem>
+
+                <ListItem button>
+                  <ListItemText
+                    primary="Bilder"
+                    onClick={(e) => history.push("/Bilder")}
+                  />
+                </ListItem>
+
+                <ListItem button>
+                  <ListItemText
+                    primary="Hvem er vi?"
+                    onClick={(e) => history.push("/Styret")}
+                  />
+                </ListItem>
+
+                <ListItem button>
+                  <ListItemText primary="Kjøp billett" />
+                </ListItem>
+              </List>
+            </Drawer>
+          </Toolbar>
+        </AppBar>
       </MobileView>
     </>
   );

@@ -39,7 +39,7 @@ const App: React.FC = () => {
             render={(props) => <Styret {...props} />}
           />
           <Route
-            path="/Images"
+            path="/Bilder"
             exact
             render={(props) => <Images {...props} />}
           />

@@ -406,13 +406,3 @@ h2 {
 .images-div {
   margin-top: 1000px;
 }
-
-/* NAVBAR - DESKTOP VS MOBILE */
-
-header.Header.Header--top {
-  display: none !important;
-}
-
-[data-nc-base="mobile-bar"] {
-  display: block !important;
-}
