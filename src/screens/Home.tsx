@@ -49,6 +49,7 @@ const Home: React.FC<Props> = ({ history }) => {
         </a>
       </div>
       <div>
+        <h2 className="h2-genus">I samarbeid med</h2>
         <img className="genus-logo" src={Genus} />
       </div>
       <div className="main_box">
