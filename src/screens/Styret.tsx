@@ -130,7 +130,7 @@ const Styret: React.FC<any> = ({ history }) => {
         </div>
       </div>
       <h1 className="h1-styret">Styret 2022</h1>
-      <Grid container spacing={1}>
+      <Grid container spacing={2}>
         {members.map((member) => (
           <Grid container spacing={1}>
             <Grid item key={member.Name} xs={12} sm={3} md={3}>
@@ -148,5 +148,14 @@ const Styret: React.FC<any> = ({ history }) => {
     </div>
   );
 };
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    Table: {
+      width: "80%",
+      margin: "auto",
+    },
+  })
+);
 
 export default Styret;

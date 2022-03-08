@@ -37,130 +37,136 @@ export default function NavBar() {
           }}
         >
           <AppBar position="static" style={{ background: "#01529d" }}>
-            <Toolbar variant="regular" sx={{ width: "auto" }}>
-              <Box sx={{ width: "100%", height: "auto" }}>
+            <Toolbar variant="regular" sx={{ width: "100%" }}>
+              <Button
+                variant="text"
+                style={{
+                  color: "white",
+                  marginTop: "20px",
+                  transition: "0.2s",
+                }}
+                onClick={(e) => history.push("/program")}
+              >
+                Program
+              </Button>
+              <Button
+                variant="text"
+                style={{
+                  color: "white",
+                  marginRight: "500px",
+                  margin: "auto",
+                  marginTop: "20px",
+                  transition: "0.2s",
+                }}
+                onClick={(e) => history.push("/Bilder")}
+              >
+                Bilder
+              </Button>
+
+              <Link href="/" color="inherit">
+                <img className="navbar-logo" src={logo} />
+              </Link>
+              <Button
+                variant="text"
+                style={{
+                  color: "white",
+                  margin: "auto",
+                  marginTop: "20px",
+                  transition: "0.2s",
+                }}
+                onClick={(e) => history.push("/styret")}
+              >
+                Hvem er vi?
+              </Button>
+              <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
                 <Button
                   variant="text"
                   style={{
                     color: "white",
+                    margin: "auto",
+                    marginTop: "20px",
                     transition: "0.2s",
                   }}
-                  onClick={(e) => history.push("/program")}
                 >
-                  Program
+                  Kjøp Billett
                 </Button>
-                <Button
-                  variant="text"
+              </a>
+              <a
+                className="linkFaceInsta"
+                href="https://www.facebook.com/hybridarevyen"
+              >
+                <FaFacebook
                   style={{
-                    color: "white",
+                    float: "right",
+                    padding: "10px",
+                    transition: "0.2s",
                   }}
-                  onClick={(e) => history.push("/Bilder")}
-                >
-                  Bilder
-                </Button>
-
-                <Link href="/" color="inherit">
-                  <img className="navbar-logo" src={logo} />
-                </Link>
-                <Button
-                  variant="text"
+                />
+              </a>
+              <a
+                className="linkFaceInsta"
+                href="https://instagram.com/hybridarevyen?utm_medium=copy_link"
+              >
+                <FaInstagram
                   style={{
-                    color: "white",
+                    float: "right",
+                    padding: "10px",
+                    transition: "0.2s",
                   }}
-                  onClick={(e) => history.push("/styret")}
-                >
-                  Hvem er vi?
-                </Button>
-                <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
-                  <Button
-                    variant="text"
-                    style={{
-                      color: "white",
-                      transition: "0.2s",
-                    }}
-                  >
-                    Kjøp Billett
-                  </Button>
-                </a>
-                <a
-                  className="linkFaceInsta"
-                  href="https://www.facebook.com/hybridarevyen"
-                >
-                  <FaFacebook
-                    style={{
-                      float: "right",
-                      padding: "10px",
-                      transition: "0.2s",
-                    }}
-                  />
-                </a>
-                <a
-                  className="linkFaceInsta"
-                  href="https://instagram.com/hybridarevyen?utm_medium=copy_link"
-                >
-                  <FaInstagram
-                    style={{
-                      float: "right",
-                      padding: "10px",
-                      transition: "0.2s",
-                    }}
-                  />
-                </a>
-              </Box>
+                />
+              </a>
             </Toolbar>
           </AppBar>
         </Box>
       </BrowserView>
       <MobileView>
-        <Box>
-          <AppBar variant="outlined" position="static">
-            <Toolbar className="navbar-mobile">
-              <IconButton
-                className="hamburger"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                onClick={() => setIsDrawerOpen(true)}
-              >
-                <Hamburger />
-              </IconButton>
-              <Link href="/" color="inherit">
-                <img className="navbar-logo" src={logo} />
-              </Link>
-              <Drawer
-                className="hamburger"
-                open={isDrawerOpen}
-                onClose={() => setIsDrawerOpen(false)}
-              >
-                <List>
-                  <ListItem button>
-                    <ListItemText
-                      primary="Program"
-                      onClick={(e) => history.push("/program")}
-                    />
-                  </ListItem>
-                  <ListItem button>
-                    <ListItemText
-                      primary="Bilder"
-                      onClick={(e) => history.push("/Bilder")}
-                    />
-                  </ListItem>
-                  <ListItem button>
-                    <ListItemText
-                      primary="Hvem er vi?"
-                      onClick={(e) => history.push("/Styret")}
-                    />
-                  </ListItem>
-                  <ListItem button>
-                    <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
-                      <ListItemText primary="Kjøp billett" />
-                    </a>
-                  </ListItem>
-                </List>
-              </Drawer>
-            </Toolbar>
-          </AppBar>
-        </Box>
+        <AppBar variant="outlined" position="static" sx={{ width: "100%" }}>
+          <Toolbar className="navbar-mobile" sx={{ width: "100%" }}>
+            <IconButton
+              className="hamburger"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={() => setIsDrawerOpen(true)}
+            >
+              <Hamburger />
+            </IconButton>
+            <Link href="/" color="inherit">
+              <img className="navbar-logo" src={logo} />
+            </Link>
+            <Drawer
+              className="hamburger"
+              open={isDrawerOpen}
+              onClose={() => setIsDrawerOpen(false)}
+            >
+              <List>
+                <ListItem button>
+                  <ListItemText
+                    primary="Program"
+                    onClick={(e) => history.push("/program")}
+                  />
+                </ListItem>
+                <ListItem button>
+                  <ListItemText
+                    primary="Bilder"
+                    onClick={(e) => history.push("/Bilder")}
+                  />
+                </ListItem>
+                <ListItem button>
+                  <ListItemText
+                    primary="Hvem er vi?"
+                    onClick={(e) => history.push("/Styret")}
+                  />
+                </ListItem>
+                <ListItem button>
+                  <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
+                    <ListItemText primary="Kjøp billett" />
+                  </a>
+                </ListItem>
+              </List>
+            </Drawer>
+          </Toolbar>
+        </AppBar>
       </MobileView>
     </>
   );
