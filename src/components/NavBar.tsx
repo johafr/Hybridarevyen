@@ -41,6 +41,10 @@ export default function NavBar() {
               <Box sx={{ width: "100%", height: "auto" }}>
                 <Button
                   variant="text"
+                  style={{
+                    color: "white",
+                    transition: "0.2s",
+                  }}
                   onClick={(e) => history.push("/program")}
                 >
                   Program
@@ -49,10 +53,6 @@ export default function NavBar() {
                   variant="text"
                   style={{
                     color: "white",
-                    marginRight: "500px",
-                    margin: "auto",
-                    marginTop: "20px",
-                    transition: "0.2s",
                   }}
                   onClick={(e) => history.push("/Bilder")}
                 >
@@ -66,9 +66,6 @@ export default function NavBar() {
                   variant="text"
                   style={{
                     color: "white",
-                    margin: "auto",
-                    marginTop: "20px",
-                    transition: "0.2s",
                   }}
                   onClick={(e) => history.push("/styret")}
                 >
@@ -79,8 +76,6 @@ export default function NavBar() {
                     variant="text"
                     style={{
                       color: "white",
-                      margin: "auto",
-                      marginTop: "20px",
                       transition: "0.2s",
                     }}
                   >

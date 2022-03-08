@@ -4,24 +4,24 @@ import { History } from "history";
 import NavBar from "../components/NavBar";
 import Footer from "../components/footer/Footer";
 import styrepic from "../bilderr/styrebilde.jpg";
-import Sigurd from "../bilderr/bilder/Casper1.jpg";
-import Elise from "../bilderr/bilder/Casper1.jpg";
-import Johannes from "../bilderr/bilder/Casper1.jpg";
+import Sigurd from "../bilderr/bilder 2/Sigurd1.jpg";
+import Elise from "../bilderr/bilder/Elise1.jpg";
+import Johannes from "../bilderr/bilder/Johannes1.jpg";
 import Casper from "../bilderr/bilder/Casper1.jpg";
-import Rebecca from "../bilderr/bilder/Casper1.jpg";
-import Torkil from "../bilderr/bilder/Casper1.jpg";
-import Oscar from "../bilderr/bilder/Casper1.jpg";
-import Helene from "../bilderr/bilder/Casper1.jpg";
-import Ida from "../bilderr/bilder/Casper1.jpg";
-import Sigurd2 from "../bilderr/bilder/Casper2.jpg";
-import Elise2 from "../bilderr/bilder/Casper2.jpg";
-import Johannes2 from "../bilderr/bilder/Casper2.jpg";
+import Rebecca from "../bilderr/bilder/Rebecca1.jpg";
+import Torkil from "../bilderr/bilder/Torkil1.jpg";
+import Oscar from "../bilderr/bilder/Oscar1.jpg";
+import Helene from "../bilderr/bilder/Helene1.jpg";
+import Ida from "../bilderr/bilder 2/Ida1.jpg";
+import Sigurd2 from "../bilderr/bilder 2/Sigurd2.jpg";
+import Elise2 from "../bilderr/bilder 2/Elise2.jpg";
+import Johannes2 from "../bilderr/bilder 2/Johannes2.jpg";
 import Casper2 from "../bilderr/bilder/Casper2.jpg";
-import Rebecca2 from "../bilderr/bilder/Casper2.jpg";
-import Torkil2 from "../bilderr/bilder/Casper2.jpg";
-import Oscar2 from "../bilderr/bilder/Casper2.jpg";
-import Helene2 from "../bilderr/bilder/Casper2.jpg";
-import Ida2 from "../bilderr/bilder/Casper2.jpg";
+import Rebecca2 from "../bilderr/bilder/Rebecca2.jpg";
+import Torkil2 from "../bilderr/bilder 2/Torkil2.jpg";
+import Oscar2 from "../bilderr/bilder 2/Oscar2.jpg";
+import Helene2 from "../bilderr/bilder 2/Helene2.jpg";
+import Ida2 from "../bilderr/bilder 2/Ida2.jpg";
 
 import {
   createStyles,
@@ -133,11 +133,11 @@ const Styret: React.FC<any> = ({ history }) => {
       <Grid container spacing={1}>
         {members.map((member) => (
           <Grid container spacing={1}>
-            <Grid item key={member.Name} xs={12} sm={4} md={4}>
+            <Grid item key={member.Name} xs={12} sm={3} md={3}>
               <img src={member.pic} alt="test" className="members-pic" />
               {/* <img src={member.hoverpic} alt="test" className="members-pic2" /> */}
             </Grid>
-            <Grid item key={member.pic} xs={12} sm={8} md={8}>
+            <Grid item key={member.pic} xs={12} sm={9} md={9}>
               <header className="subHeader-styret">{member.Name}</header>
               <p className="description-styret">{member.Text}</p>
             </Grid>
