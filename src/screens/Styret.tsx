@@ -103,7 +103,7 @@ const Styret: React.FC<any> = ({ history }) => {
       <NavBar />
       <div className="main_box">
         <div className="sub_box">
-          <header className="">Om oss</header>
+          <h1 className="">Om oss</h1>
           <p className="">
             I år har Hybrida stått på for å få igang en revy for aller første
             gang! På bilde ser du oss i revystyret. Men det er ikke så viktig.

@@ -384,6 +384,7 @@ h2 {
   margin-left: -80px;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
   body {
     background: skyblue;
@@ -479,4 +480,24 @@ h2 {
     margin-left: 0%;
     margin-right: 10%;
   }
+=======
+.genus-logo {
+  object-fit: cover;
+  width: 35%;
+  height: 35%;
+  margin-left: 32%;
+}
+
+.h2-genus {
+  position: center;
+  text-align: center;
+}
+
+.h1-actors {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-decoration: underline;
+>>>>>>> 0677b20c7e95b48845061a75e66f502873694242
 }
