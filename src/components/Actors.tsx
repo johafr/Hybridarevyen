@@ -51,7 +51,7 @@ const Actors: React.FC<any> = ({ history }) => {
   return (
     <div>
       <div>
-        <h1 className="h1-styret">Skuespillerne</h1>
+        <h1 className="h1-actors">Skuespillerne</h1>
       </div>
       <div className="">
         <Grid container spacing={5} className="actors-container">
