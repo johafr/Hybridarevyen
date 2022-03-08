@@ -12,43 +12,52 @@ import NavBar from "../components/NavBar";
 import Casper2 from "../bildepagebilder/Casper2.jpg";
 import Johannes1 from "../bildepagebilder/Johannes1.jpg";
 import Rebecca2 from "../bildepagebilder/Rebecca2.jpg";
+import { fontGrid } from "@mui/material/styles/cssUtils";
 
 interface props extends defaultProps {}
 
 const Images: React.FC<props> = () => {
+  const imgs = [
+    { Bilde: Casper2 },
+    { Bilde: Johannes1 },
+    { Bilde: Rebecca2 },
+    { Bilde: Casper2 },
+    { Bilde: Casper2 },
+    { Bilde: Casper2 },
+    { Bilde: Casper2 },
+    { Bilde: Casper2 },
+    { Bilde: Casper2 },
+    { Bilde: Casper2 }
+  ];
   return (
     <div>
       <NavBar />
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          alignContent: "center",
-          p: 1,
-          m: 1,
-          bgcolor: "background.paper",
-          maxWidth: 380,
-          height: 200,
-          borderRadius: 1
-        }}
-      >
-        <Card
-          sx={{
-            width: "auto",
-            height: "auto",
-            maxWidth: "50%",
-            maxHeight: "50%"
-          }}
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="auto"
-              image={Casper2}
-              alt="bilde"
-            />
-          </CardActionArea>
-        </Card>
+          {imgs.map(img => (
+            <Grid item xs={2} sm={4} md={4}>
+              <Card
+                sx={{
+                  width: "auto",
+                  height: "auto",
+                  maxWidth: "100%",
+                  maxHeight: "100%"
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  height="auto"
+                  image={img.Bilde}
+                  alt="bilde"
+                />
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
       </Box>
     </div>
   );

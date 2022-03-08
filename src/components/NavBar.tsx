@@ -17,31 +17,31 @@ export default function NavBar() {
   return (
     <Box sx={{ flexGrow: 1, position: "sticky", top: 0, zIndex: 9999 }}>
       <AppBar position="static" style={{ background: "#01529d" }}>
-        <Toolbar variant="dense">
+        <Toolbar variant="regular">
           <Button
             variant="text"
             style={{
               color: "white",
               margin: "auto",
               marginTop: "20px",
-              transition: "0.2s",
+              transition: "0.2s"
             }}
-            onClick={(e) => history.push("/program")}
+            onClick={e => history.push("/program")}
           >
             Program
           </Button>
-
-          {/* KUN DER DET STÅR HYBRIDAREVYEN */}
-          {/* <Typography
-            variant="h6"
-            color="inherit"
-            component="div"
-            style={{ marginLeft: "10px" }}
+          <Button
+            variant="text"
+            style={{
+              color: "white",
+              margin: "auto",
+              marginTop: "20px",
+              transition: "0.2s"
+            }}
+            onClick={e => history.push("/Images")}
           >
-            <Link href="/" color="inherit">
-              Hybridarevyen 2022
-            </Link>
-          </Typography> */}
+            Bilder
+          </Button>
 
           <Link href="/" color="inherit">
             <img className="navbar-logo" src={logo} />
@@ -52,11 +52,24 @@ export default function NavBar() {
               color: "white",
               margin: "auto",
               marginTop: "20px",
-              transition: "0.2s",
+              transition: "0.2s"
             }}
           >
             Hvem er vi?
           </Button>
+          <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
+            <Button
+              variant="text"
+              style={{
+                color: "white",
+                margin: "auto",
+                marginTop: "20px",
+                transition: "0.2s"
+              }}
+            >
+              Kjøp Billett
+            </Button>
+          </a>
           <a
             className="linkFaceInsta"
             href="https://www.facebook.com/hybridarevyen"
