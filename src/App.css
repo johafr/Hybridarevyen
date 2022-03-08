@@ -219,8 +219,8 @@ h2 {
 .container {
   max-width: 101.3%;
   max-height: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+    margin-right: 20px; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -321,4 +321,68 @@ h2 {
 .actors-kris {
   margin-left: 215px;
   margin-right: 215px;
+}
+
+/* Styret-screen  */
+
+.styret-pic {
+  margin: 50px;
+  max-width: 94%;
+}
+
+.members-pic {
+  width: 250px;
+  height: 281px;
+  position: absolute;
+}
+
+.members-pic2 {
+  width: 250px;
+  height: 281px;
+  opacity: 0;
+  position: absolute;
+}
+
+.members-pic2:hover {
+  width: 250px;
+  height: 281px;
+  opacity: 1 !important;
+}
+
+.header-styret {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 100px;
+  color: black;
+}
+
+.intro-styret {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 100px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.description-styret {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-left: 250px;
+}
+
+.subHeader-styret {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 50px;
+  color: black;
+  margin-left: 250px;
+}
+
+.h1-styret {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: black;
 }

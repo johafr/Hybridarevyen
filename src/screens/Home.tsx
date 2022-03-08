@@ -1,4 +1,4 @@
-import React from "react";
+import React, { RefObject } from "react";
 //import AppBar from "../components/AppBar";
 import { History } from "history";
 import { Link } from "react-router-dom";
