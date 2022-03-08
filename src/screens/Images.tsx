@@ -201,8 +201,13 @@ const Images: React.FC<props> = () => {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
+<<<<<<< HEAD
           {imgs.map(img => (
             <Grid item xs={2} sm={4} md={4}>
+=======
+          {imgs.map((img) => (
+            <Grid item xs={12} sm={4} md={4}>
+>>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
               <Card
                 sx={{
                   width: "auto",

@@ -31,7 +31,6 @@ interface Props {
 }
 
 const Home: React.FC<Props> = ({ history }) => {
-  const classes = useStyles();
   return (
     <div>
       <NavBar />
@@ -84,14 +83,5 @@ const Home: React.FC<Props> = ({ history }) => {
     </div>
   );
 };
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    Table: {
-      width: "80%",
-      margin: "auto",
-    },
-  })
-);
 
 export default Home;

@@ -197,7 +197,7 @@ h2 {
   border-radius: 20%;
   margin-top: 25px;
   margin-left: 10%;
-  margin-right: 25px;
+  margin-right: 50px;
   margin-bottom: 4%;
 }
 
@@ -214,9 +214,15 @@ h2 {
 
 .undergruppetekstreverse {
   color: black;
+  margin-right: 10px;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .undergruppetekst {
+  background-color: white;
+}
+.undergruppetekst2 {
   background-color: white;
 }
 
@@ -287,6 +293,10 @@ h2 {
   margin-right: 215px;
 }
 
+.grid-remove {
+  padding: 0;
+}
+
 /* Styret-screen  */
 
 .styret-pic {
@@ -294,12 +304,17 @@ h2 {
   max-width: 94%;
 }
 
+.styret-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .members-pic {
   width: 250px;
   height: 281px;
   max-width: 40%;
   max-height: 20%;
-  position: absolute;
+  position: flex;
   margin-left: 5%;
 }
 
@@ -308,7 +323,7 @@ h2 {
   height: 281px;
   max-width: 40%;
   opacity: 0;
-  position: absolute;
+  position: flex;
   margin-left: 5%;
 }
 
@@ -389,6 +404,9 @@ h2 {
   body {
     background: skyblue;
   }
+  .undergruppetekstreverse {
+    margin-left: 20px;
+  }
 
   html,
   body {
@@ -418,12 +436,12 @@ h2 {
 
   .promo {
     margin-left: 9%;
-    margin-bottom: 2070%;
+    margin-bottom: 2100%;
   }
 
   .scroll {
     margin-left: 52%;
-    margin-bottom: 2070%;
+    margin-bottom: 2100%;
   }
 
   button {
@@ -453,9 +471,10 @@ h2 {
   }
 
   h2#h2_trans {
-    /* margin-left: 10%; */
     text-decoration: underline;
     margin-top: 10%;
+    text-align: -webkit-center;
+    margin-right: 20% !important;
   }
 
   p {
@@ -480,4 +499,42 @@ h2 {
     margin-left: 0%;
     margin-right: 10%;
   }
+<<<<<<< HEAD
+=======
+}
+
+.genus-logo {
+  object-fit: cover;
+  width: 35%;
+  height: 35%;
+  margin-left: 32%;
+}
+
+.h2-genus {
+  position: center;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.h1-actors {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-decoration: underline;
+}
+
+.actors-logo {
+  margin-top: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 25px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 60%;
+  width: 60%;
+>>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
 }
