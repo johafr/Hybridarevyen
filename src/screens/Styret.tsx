@@ -139,13 +139,8 @@ const Styret: React.FC<any> = ({ history }) => {
         </div>
       </div>
       <h1 className="h1-styret">Styret 2022</h1>
-<<<<<<< HEAD
       <Grid container spacing={2}>
         {members.map(member => (
-=======
-      <Grid container spacing={1}>
-        {members.map((member) => (
->>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
           <Grid container spacing={1}>
             <Grid item key={member.Name} xs={12} sm={4} md={4}>
               <img src={member.pic} alt="test" className="members-pic" />
@@ -163,7 +158,6 @@ const Styret: React.FC<any> = ({ history }) => {
   );
 };
 
-<<<<<<< HEAD
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     Table: {
@@ -173,6 +167,4 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-=======
->>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
 export default Styret;

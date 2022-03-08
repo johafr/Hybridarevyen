@@ -37,7 +37,6 @@ export default function NavBar() {
           }}
         >
           <AppBar position="static" style={{ background: "#01529d" }}>
-<<<<<<< HEAD
             <Toolbar variant="regular" sx={{ width: "100%" }}>
               <Button
                 variant="text"
@@ -88,13 +87,6 @@ export default function NavBar() {
                     marginTop: "20px",
                     transition: "0.2s"
                   }}
-=======
-            <Toolbar variant="regular" sx={{ width: "auto" }}>
-              <Box sx={{ width: "100%", height: "auto" }}>
-                <Button
-                  variant="text"
-                  onClick={(e) => history.push("/program")}
->>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
                 >
                   Kjøp Billett
                 </Button>
@@ -105,7 +97,6 @@ export default function NavBar() {
               >
                 <FaFacebook
                   style={{
-<<<<<<< HEAD
                     float: "right",
                     padding: "10px",
                     transition: "0.2s"
@@ -124,78 +115,11 @@ export default function NavBar() {
                   }}
                 />
               </a>
-=======
-                    color: "white",
-                    marginRight: "500px",
-                    margin: "auto",
-                    marginTop: "20px",
-                    transition: "0.2s",
-                  }}
-                  onClick={(e) => history.push("/Bilder")}
-                >
-                  Bilder
-                </Button>
-
-                <Link href="/" color="inherit">
-                  <img className="navbar-logo" src={logo} />
-                </Link>
-                <Button
-                  variant="text"
-                  style={{
-                    color: "white",
-                    margin: "auto",
-                    marginTop: "20px",
-                    transition: "0.2s",
-                  }}
-                  onClick={(e) => history.push("/styret")}
-                >
-                  Hvem er vi?
-                </Button>
-                <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
-                  <Button
-                    variant="text"
-                    style={{
-                      color: "white",
-                      margin: "auto",
-                      marginTop: "20px",
-                      transition: "0.2s",
-                    }}
-                  >
-                    Kjøp Billett
-                  </Button>
-                </a>
-                <a
-                  className="linkFaceInsta"
-                  href="https://www.facebook.com/hybridarevyen"
-                >
-                  <FaFacebook
-                    style={{
-                      float: "right",
-                      padding: "10px",
-                      transition: "0.2s",
-                    }}
-                  />
-                </a>
-                <a
-                  className="linkFaceInsta"
-                  href="https://instagram.com/hybridarevyen?utm_medium=copy_link"
-                >
-                  <FaInstagram
-                    style={{
-                      float: "right",
-                      padding: "10px",
-                      transition: "0.2s",
-                    }}
-                  />
-                </a>
-              </Box>
->>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
             </Toolbar>
           </AppBar>
         </Box>
       </BrowserView>
       <MobileView>
-<<<<<<< HEAD
         <AppBar variant="outlined" position="static" sx={{ width: "100%" }}>
           <Toolbar className="navbar-mobile" sx={{ width: "100%" }}>
             <IconButton
@@ -215,7 +139,7 @@ export default function NavBar() {
               open={isDrawerOpen}
               onClose={() => setIsDrawerOpen(false)}
             >
-              <List className={classes.drawer}>
+              <List className={""}>
                 <ListItem button>
                   <ListItemText
                     primary="Program"
@@ -243,57 +167,6 @@ export default function NavBar() {
             </Drawer>
           </Toolbar>
         </AppBar>
-=======
-        <Box>
-          <AppBar variant="outlined" position="static">
-            <Toolbar className="navbar-mobile">
-              <IconButton
-                className="hamburger"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                onClick={() => setIsDrawerOpen(true)}
-              >
-                <Hamburger />
-              </IconButton>
-              <Link href="/" color="inherit">
-                <img className="navbar-logo" src={logo} />
-              </Link>
-              <Drawer
-                className="hamburger"
-                open={isDrawerOpen}
-                onClose={() => setIsDrawerOpen(false)}
-              >
-                <List>
-                  <ListItem button>
-                    <ListItemText
-                      primary="Program"
-                      onClick={(e) => history.push("/program")}
-                    />
-                  </ListItem>
-                  <ListItem button>
-                    <ListItemText
-                      primary="Bilder"
-                      onClick={(e) => history.push("/Bilder")}
-                    />
-                  </ListItem>
-                  <ListItem button>
-                    <ListItemText
-                      primary="Hvem er vi?"
-                      onClick={(e) => history.push("/Styret")}
-                    />
-                  </ListItem>
-                  <ListItem button>
-                    <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
-                      <ListItemText primary="Kjøp billett" />
-                    </a>
-                  </ListItem>
-                </List>
-              </Drawer>
-            </Toolbar>
-          </AppBar>
-        </Box>
->>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
       </MobileView>
     </>
   );

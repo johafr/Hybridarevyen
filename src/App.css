@@ -499,42 +499,4 @@ h2 {
     margin-left: 0%;
     margin-right: 10%;
   }
-<<<<<<< HEAD
-=======
-}
-
-.genus-logo {
-  object-fit: cover;
-  width: 35%;
-  height: 35%;
-  margin-left: 32%;
-}
-
-.h2-genus {
-  position: center;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-}
-
-.h1-actors {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  font-size: 50px;
-  color: black;
-  text-decoration: underline;
-}
-
-.actors-logo {
-  margin-top: 20px;
-  max-height: 100%;
-  max-width: 100%;
-  margin-top: 25px;
-  object-fit: cover;
-  border-radius: 20%;
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 60%;
-  width: 60%;
->>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
 }
