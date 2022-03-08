@@ -3,15 +3,16 @@ import React from "react";
 import { History } from "history";
 import { Grid, Card } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core";
-import elise from "../bilderr/Casper1.png";
-import sverre from "../bilderr/Casper1.png";
-import mo from "../bilderr/Casper1.png";
-import helene from "../bilderr/Casper1.png";
-import oscar from "../bilderr/Casper1.png";
-import steph from "../bilderr/Casper1.png";
-import kris from "../bilderr/Casper1.png";
-import even from "../bilderr/Casper1.png";
+// import elise from "../bilderr/nyebilder/elise.jpg";
+import sverre from "../bilderr/nyebilder/sverre.jpg";
+import mo from "../bilderr/nyebilder/MO.jpg";
+import helene from "../bilderr/nyebilder/helene.jpg";
+import oscar from "../bilderr/nyebilder/timm.jpg";
+import steph from "../bilderr/nyebilder/steph.jpg";
+import kris from "../bilderr/nyebilder/kris.jpg";
+import even from "../bilderr/nyebilder/even.jpg";
 import logo from "../bilderr/logo.png";
+import elise from "../bilderr/nyebilder/elise.jpg";
 
 const actors = [
   {
@@ -73,9 +74,9 @@ const Actors: React.FC<any> = ({ history }) => {
               </Grid>
             </>
           ))}
-          <Grid className="actors-kris" item xs={12} sm={6} md={6}>
-            <img className="actors-kris" src={kris} />
-            <h2 className="actors-kris">Kristoffer Seyffarth </h2>
+          <Grid className="grid-remove" item xs={12} sm={6} md={6}>
+            <img className="actors-kris2" src={kris} />
+            <h2 className="actors-kris2">Kristoffer Seyffarth </h2>
           </Grid>
           {/* <Grid item xs={12} sm={4} md={4}>
             <img className="actors-logogrid-remove " src={logo} />

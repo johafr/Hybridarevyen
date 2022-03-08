@@ -267,8 +267,8 @@ h2 {
 
 .actors-pic {
   margin-top: 20px;
-  max-height: 90%;
-  max-width: 90%;
+  max-height: 75%;
+  max-width: 75%;
   margin-top: 25px;
   object-fit: cover;
   border-radius: 20%;
@@ -289,8 +289,27 @@ h2 {
 }
 
 .actors-kris {
-  margin-left: 215px;
-  margin-right: 215px;
+  margin-top: 20px;
+  max-height: 53%;
+  max-width: 53%;
+  margin-top: 25px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 4%;
+}
+
+.actors-kris2 {
+  margin-top: 20px;
+  max-height: 50%;
+  max-width: 53%;
+  margin-top: 25px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 4%;
 }
 
 .grid-remove {
@@ -300,7 +319,7 @@ h2 {
 /* Styret-screen  */
 
 .styret-pic {
-  margin: 50px;
+  margin: 20px;
   max-width: 94%;
 }
 
@@ -312,8 +331,6 @@ h2 {
 .members-pic {
   width: 250px;
   height: 281px;
-  max-width: 40%;
-  max-height: 20%;
   position: flex;
   margin-left: 5%;
 }
@@ -361,6 +378,7 @@ h2 {
   text-align: left;
   font-size: 50px;
   color: black;
+  margin-left: 5px;
 }
 
 .h1-styret {
