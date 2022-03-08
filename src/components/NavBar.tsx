@@ -38,14 +38,9 @@ export default function NavBar() {
         >
           <AppBar position="static" style={{ background: "#01529d" }}>
             <Toolbar variant="regular" sx={{ width: "auto" }}>
-              <Box sx={{ width: "100%", height: "auto" }}>
+              <Box>
                 <Button
                   variant="text"
-                  style={{
-                    color: "white",
-                    marginTop: "20px",
-                    transition: "0.2s",
-                  }}
                   onClick={(e) => history.push("/program")}
                 >
                   Program
