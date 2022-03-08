@@ -11,6 +11,7 @@ import oscar from "../bilderr/Casper1.png";
 import steph from "../bilderr/Casper1.png";
 import kris from "../bilderr/Casper1.png";
 import even from "../bilderr/Casper1.png";
+import logo from "../bilderr/logo.png";
 
 const actors = [
   {
@@ -39,11 +40,11 @@ const actors = [
   },
   // {
   //   Name: "Kristoffer Seyffarth",
-  //   pic: pic1,
+  //   pic: kris,
   // },
   // {
   //   Name: "Even Eielsen",
-  //   pic: pic1,
+  //   pic: even,
   // },
 ];
 
@@ -54,11 +55,11 @@ const Actors: React.FC<any> = ({ history }) => {
         <h1 className="h1-actors">Skuespillerne</h1>
       </div>
       <div className="">
-        <Grid container spacing={5} className="actors-container">
+        <Grid container spacing={5} className="actors-container grid-remove">
           {actors.map((actor) => (
             <>
               <Grid
-                className="actors-name"
+                className="actors-name grid-remove"
                 item
                 xs={12}
                 sm={4}
@@ -76,7 +77,10 @@ const Actors: React.FC<any> = ({ history }) => {
             <img className="actors-kris" src={kris} />
             <h2 className="actors-kris">Kristoffer Seyffarth </h2>
           </Grid>
-          <Grid item xs={12} sm={6} md={6}>
+          {/* <Grid item xs={12} sm={4} md={4}>
+            <img className="actors-logogrid-remove " src={logo} />
+          </Grid> */}
+          <Grid item xs={12} sm={4} md={4} className="grid-remove">
             <img className="actors-kris" src={even} />
             <h2 className="actors-kris">Even Eilesen</h2>
           </Grid>
@@ -85,14 +89,5 @@ const Actors: React.FC<any> = ({ history }) => {
     </div>
   );
 };
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    Table: {
-      width: "80%",
-      margin: "auto",
-    },
-  })
-);
 
 export default Actors;

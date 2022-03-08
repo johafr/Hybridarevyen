@@ -20,16 +20,9 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
-  drawer: {
-    width: 250,
-  },
-});
-
 export default function NavBar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   let history = useHistory();
-  const classes = useStyles();
 
   return (
     <>
@@ -37,15 +30,7 @@ export default function NavBar() {
         <Box sx={{ flexGrow: 1, position: "sticky", top: 0, zIndex: 9999 }}>
           <AppBar position="static" style={{ background: "#01529d" }}>
             <Toolbar variant="regular">
-              <Button
-                variant="text"
-                style={{
-                  color: "white",
-                  marginTop: "20px",
-                  transition: "0.2s",
-                }}
-                onClick={(e) => history.push("/program")}
-              >
+              <Button variant="text" onClick={(e) => history.push("/program")}>
                 Program
               </Button>
               <Button
@@ -139,7 +124,7 @@ export default function NavBar() {
                 open={isDrawerOpen}
                 onClose={() => setIsDrawerOpen(false)}
               >
-                <List className={classes.drawer}>
+                <List>
                   <ListItem button>
                     <ListItemText
                       primary="Program"

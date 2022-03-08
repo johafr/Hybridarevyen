@@ -47,7 +47,7 @@ const Images: React.FC<props> = () => {
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           {imgs.map((img) => (
-            <Grid item xs={2} sm={4} md={4}>
+            <Grid item xs={12} sm={4} md={4}>
               <Card
                 sx={{
                   width: "auto",

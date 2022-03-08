@@ -174,10 +174,6 @@ h2 {
   margin-top: 10%;
 }
 
-.container {
-  margin: auto;
-}
-
 /* Undergruppe */
 
 /*.undergruppeheader {
@@ -193,7 +189,7 @@ h2 {
   border-radius: 20%;
   margin-top: 25px;
   margin-left: 10%;
-  margin-right: 25px;
+  margin-right: 50px;
   margin-bottom: 4%;
 }
 
@@ -325,6 +321,10 @@ h2 {
   margin-right: 215px;
 }
 
+.grid-remove {
+  padding: 0;
+}
+
 /* Styret-screen  */
 
 .styret-pic {
@@ -332,12 +332,17 @@ h2 {
   max-width: 94%;
 }
 
+.styret-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .members-pic {
   width: 250px;
   height: 281px;
   max-width: 40%;
   max-height: 20%;
-  position: absolute;
+  position: flex;
   margin-left: 5%;
 }
 
@@ -346,7 +351,7 @@ h2 {
   height: 281px;
   max-width: 40%;
   opacity: 0;
-  position: absolute;
+  position: flex;
   margin-left: 5%;
 }
 
@@ -439,4 +444,17 @@ h2 {
   font-size: 50px;
   color: black;
   text-decoration: underline;
+}
+
+.actors-logo {
+  margin-top: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 25px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 60%;
+  width: 60%;
 }

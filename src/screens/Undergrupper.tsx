@@ -81,7 +81,7 @@ const groups = [
 
 const Undergrupper: React.FC<any> = ({ history }) => {
   return (
-    <div className="undergruppeshit">
+    <div className="">
       {/* <header className="undergruppeheader">Undergrupper</header> */}
       <div className="undergruppe-overskrift">
         <h1 className="h1-undergruppe">Undergruppene</h1>
@@ -157,14 +157,5 @@ const Undergrupper: React.FC<any> = ({ history }) => {
     </div>
   );
 };
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    Table: {
-      width: "80%",
-      margin: "auto",
-    },
-  })
-);
 
 export default Undergrupper;
