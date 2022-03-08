@@ -57,7 +57,7 @@ export default function NavBar() {
                   marginTop: "20px",
                   transition: "0.2s",
                 }}
-                onClick={(e) => history.push("/Images")}
+                onClick={(e) => history.push("/Bilder")}
               >
                 Bilder
               </Button>
@@ -159,8 +159,9 @@ export default function NavBar() {
                     />
                   </ListItem>
                   <ListItem button>
-                    <ListItemText primary="Kjøp billett" />
-                    <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I" />
+                    <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
+                      <ListItemText primary="Kjøp billett" />
+                    </a>
                   </ListItem>
                 </List>
               </Drawer>

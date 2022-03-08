@@ -13,6 +13,7 @@ import Undergruppe from "../screens/Undergrupper";
 import NavBar from "../components/NavBar";
 import Actors from "../components/Actors";
 import Footer from "../components/footer/Footer";
+import Genus from "../bilderr/genuslogo.png";
 
 import {
   createStyles,
@@ -47,7 +48,9 @@ const Home: React.FC<Props> = ({ history }) => {
           <button className="scroll">KJØP BILETTER</button>
         </a>
       </div>
-
+      <div>
+        <img className="genus-logo" src={Genus} />
+      </div>
       <div className="main_box">
         <div className="sub_box">
           <h1>Om oss</h1>
