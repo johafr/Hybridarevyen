@@ -22,8 +22,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   drawer: {
-    width: 250,
-  },
+    width: 250
+  }
 });
 
 export default function NavBar() {
@@ -34,86 +34,96 @@ export default function NavBar() {
   return (
     <>
       <BrowserView>
-        <Box sx={{ flexGrow: 1, position: "sticky", top: 0, zIndex: 9999 }}>
+        <Box
+          sx={{
+            width: "100%",
+            flexGrow: 1,
+            position: "sticky",
+            top: 0,
+            zIndex: 9999
+          }}
+        >
           <AppBar position="static" style={{ background: "#01529d" }}>
-            <Toolbar variant="regular">
-              <Button
-                variant="text"
-                style={{
-                  color: "white",
-                  marginTop: "20px",
-                  transition: "0.2s",
-                }}
-                onClick={(e) => history.push("/program")}
-              >
-                Program
-              </Button>
-              <Button
-                variant="text"
-                style={{
-                  color: "white",
-                  marginRight: "500px",
-                  margin: "auto",
-                  marginTop: "20px",
-                  transition: "0.2s",
-                }}
-                onClick={(e) => history.push("/Images")}
-              >
-                Bilder
-              </Button>
+            <Toolbar variant="regular" sx={{ width: "auto" }}>
+              <Box sx={{ width: "100%", height: "auto" }}>
+                <Button
+                  variant="text"
+                  style={{
+                    color: "white",
+                    marginTop: "20px",
+                    transition: "0.2s"
+                  }}
+                  onClick={e => history.push("/program")}
+                >
+                  Program
+                </Button>
+                <Button
+                  variant="text"
+                  style={{
+                    color: "white",
+                    marginRight: "500px",
+                    margin: "auto",
+                    marginTop: "20px",
+                    transition: "0.2s"
+                  }}
+                  onClick={e => history.push("/Bilder")}
+                >
+                  Bilder
+                </Button>
 
-              <Link href="/" color="inherit">
-                <img className="navbar-logo" src={logo} />
-              </Link>
-              <Button
-                variant="text"
-                style={{
-                  color: "white",
-                  margin: "auto",
-                  marginTop: "20px",
-                  transition: "0.2s",
-                }}
-                onClick={(e) => history.push("/styret")}
-              >
-                Hvem er vi?
-              </Button>
-              <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
+                <Link href="/" color="inherit">
+                  <img className="navbar-logo" src={logo} />
+                </Link>
                 <Button
                   variant="text"
                   style={{
                     color: "white",
                     margin: "auto",
                     marginTop: "20px",
-                    transition: "0.2s",
+                    transition: "0.2s"
                   }}
+                  onClick={e => history.push("/styret")}
                 >
-                  Kjøp Billett
+                  Hvem er vi?
                 </Button>
-              </a>
-              <a
-                className="linkFaceInsta"
-                href="https://www.facebook.com/hybridarevyen"
-              >
-                <FaFacebook
-                  style={{
-                    float: "right",
-                    padding: "10px",
-                    transition: "0.2s",
-                  }}
-                />
-              </a>
-              <a
-                className="linkFaceInsta"
-                href="https://instagram.com/hybridarevyen?utm_medium=copy_link"
-              >
-                <FaInstagram
-                  style={{
-                    float: "right",
-                    padding: "10px",
-                    transition: "0.2s",
-                  }}
-                />
-              </a>
+                <a href="https://tikkio.com/tickets/28027-hybridarevyen-2022-bare-revy?fbclid=IwAR1310KnEqsoF-gYpNwWKt89DreCbEREfmDUZ1WORYWE1xgp-idOaDSbU-I">
+                  <Button
+                    variant="text"
+                    style={{
+                      color: "white",
+                      margin: "auto",
+                      marginTop: "20px",
+                      transition: "0.2s"
+                    }}
+                  >
+                    Kjøp Billett
+                  </Button>
+                </a>
+                <a
+                  className="linkFaceInsta"
+                  href="https://www.facebook.com/hybridarevyen"
+                >
+                  <FaFacebook
+                    style={{
+                      float: "right",
+                      padding: "10px",
+                      transition: "0.2s"
+                    }}
+                  />
+                </a>
+                <a
+                  className="linkFaceInsta"
+                  href="https://instagram.com/hybridarevyen?utm_medium=copy_link"
+                >
+                  <FaInstagram
+                    style={{
+                      float: "right",
+                      padding: "10px",
+                      transition: "0.2s"
+                    }}
+                  />
+                </a>
+              </Box>
             </Toolbar>
           </AppBar>
         </Box>
@@ -143,19 +153,19 @@ export default function NavBar() {
                   <ListItem button>
                     <ListItemText
                       primary="Program"
-                      onClick={(e) => history.push("/program")}
+                      onClick={e => history.push("/program")}
                     />
                   </ListItem>
                   <ListItem button>
                     <ListItemText
                       primary="Bilder"
-                      onClick={(e) => history.push("/Bilder")}
+                      onClick={e => history.push("/Bilder")}
                     />
                   </ListItem>
                   <ListItem button>
                     <ListItemText
                       primary="Hvem er vi?"
-                      onClick={(e) => history.push("/Styret")}
+                      onClick={e => history.push("/Styret")}
                     />
                   </ListItem>
                   <ListItem button>
