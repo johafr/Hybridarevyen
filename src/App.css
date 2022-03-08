@@ -69,7 +69,7 @@ hr {
 }
 
 h1 {
-  color: rgb(31, 31, 204);
+  color: #01529d;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   text-align: center;
@@ -156,6 +156,7 @@ p {
 
 .undergruppetekst {
   border: black, 2px;
+  margin-left: 20px;
 }
 
 #gruppe_p {
@@ -192,7 +193,8 @@ h2 {
   border-radius: 20%;
   margin-top: 25px;
   margin-left: 10%;
-  margin-bottom: 10%;
+  margin-right: 25px;
+  margin-bottom: 4%;
 }
 
 .undergruppebilder {
@@ -203,6 +205,7 @@ h2 {
   object-fit: cover;
   border-radius: 20%;
   margin-left: 10%;
+  margin-bottom: 4%;
 }
 
 .undergruppetekstreverse {
@@ -211,12 +214,13 @@ h2 {
 
 .undergruppetekst {
   background-color: white;
-  width: 100%;
 }
 
 .container {
   max-width: 101.3%;
   max-height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -268,19 +272,53 @@ h2 {
   color: white;
 }
 
-.actors {
-  position: "center";
-  margin-left: "20%";
-  margin-right: "20%";
-}
-
-.actors-pic {
-  height: 100px;
-  width: 100px;
-  position: "center";
-}
-
 .navbar-logo {
   height: 70px;
   width: 70px;
+}
+
+.undergruppe-overskrift  {
+  background-color: white;
+}
+
+.undergruppetekst {
+  margin-left: 10px;
+}
+
+.actors {
+  background-color: white;
+  background-color: skyblue;
+  padding: 15px 40px 40px 20px;
+  height: 75%;
+  justify-content: center;
+  display: flex;
+  margin-left: 61px;
+  margin-right: 61px;
+}
+
+.actors-pic {
+  margin-top: 20px;
+  max-height: 90%;
+  max-width: 90%;
+  margin-top: 25px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-left: 113px;
+  margin-right: 113px;
+  margin-bottom: 4%;
+}
+
+.actors-name {
+  margin-left: 63px;
+  margin-right: 63px;
+}
+
+.actors-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.actors-kris {
+  margin-left: 215px;
+  margin-right: 215px;
 }
