@@ -9,38 +9,14 @@ import { CardActionArea } from "@mui/material";
 import { defaultProps } from "../App";
 import NavBar from "../components/NavBar";
 
-import Casper2 from "../bildepagebilder/Casper2.jpg";
-import Johannes1 from "../bildepagebilder/Johannes1.jpg";
-import Rebecca2 from "../bildepagebilder/Rebecca2.jpg";
-import { fontGrid } from "@mui/material/styles/cssUtils";
+import 1 from "../../bilderr/";
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => {
-    images[item.replace("./", "")] = r(item);
-  });
-  return images;
-}
 
-const images = importAll(
-  require.context("./images", false, /\.(png|jpe?g|svg)$/)
-);
 
 interface props extends defaultProps {}
 
 const Images: React.FC<props> = () => {
-  const imgs = [
-    { Bilde: Casper2 },
-    { Bilde: Johannes1 },
-    { Bilde: Rebecca2 },
-    { Bilde: Casper2 },
-    { Bilde: Casper2 },
-    { Bilde: Casper2 },
-    { Bilde: Casper2 },
-    { Bilde: Casper2 },
-    { Bilde: Casper2 },
-    { Bilde: Casper2 }
-  ];
+  const imgs = images;
   return (
     <div className="">
       <NavBar />
