@@ -3,59 +3,76 @@ import React from "react";
 import { History } from "history";
 import { Grid, Card } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core";
-import pic1 from "../bilderr/logo.png";
-import pic2 from "../bilderr/Casper1.png";
+import elise from "../bilderr/Casper1.png";
+import sverre from "../bilderr/Casper1.png";
+import mo from "../bilderr/Casper1.png";
+import helene from "../bilderr/Casper1.png";
+import oscar from "../bilderr/Casper1.png";
+import steph from "../bilderr/Casper1.png";
+import kris from "../bilderr/Casper1.png";
+import even from "../bilderr/Casper1.png";
 
 const actors = [
   {
-    Name: "hei",
-    pic: pic1,
+    Name: "Elise Raaen Bø",
+    pic: elise,
   },
   {
-    Name: "hei2",
-    pic: pic2,
+    Name: "Sverre Kjuus",
+    pic: sverre,
   },
   {
-    Name: "hei3",
-    pic: pic1,
+    Name: "Mads Olav Eek",
+    pic: mo,
   },
   {
-    Name: "hei4",
-    pic: pic1,
+    Name: "Helene Maria Tellefsen",
+    pic: helene,
   },
   {
-    Name: "hei5",
-    pic: pic1,
+    Name: "Oscar Timm Marcussen",
+    pic: oscar,
   },
   {
-    Name: "hei",
-    pic: pic1,
+    Name: "Stephanie Huynh",
+    pic: steph,
   },
-  {
-    Name: "hei",
-    pic: pic1,
-  },
-  {
-    Name: "hei",
-    pic: pic1,
-  },
+  // {
+  //   Name: "Kristoffer Seyffarth",
+  //   pic: pic1,
+  // },
+  // {
+  //   Name: "Even Eielsen",
+  //   pic: pic1,
+  // },
 ];
 
 const Actors: React.FC<any> = ({ history }) => {
   return (
-    <div className="actors">
-      <Card>
-        <Grid container spacing={5} className="container">
+    <div>
+      <div>
+        <h1>Skuespillerne</h1>
+      </div>
+      <div className="actors">
+        <Grid container spacing={5} className="actors-container">
           {actors.map((actor) => (
             <>
               <Grid className="" item xs={12} sm={4} md={4} key={actor.Name}>
                 <img className="actors-pic" src={actor.pic} />
-                <h2>{actor.Name}</h2>
+                <h2 className="actors-name">{actor.Name}</h2>
               </Grid>
             </>
           ))}
+          <Grid className="actors-kris" item xs={12} sm={6} md={6}>
+            <img className="actors-kris" src={kris} />
+            <h2 className="actors-kris">Kristoffer Seyffarth </h2>
+          </Grid>
+          <Grid item xs={12} sm={6} md={6}>
+            <img className="actors-kris" src={even} />
+            <h2 className="actors-kris">Even Eilesen</h2>
+          </Grid>
         </Grid>
-      </Card>
+      </div>
     </div>
   );
 };
