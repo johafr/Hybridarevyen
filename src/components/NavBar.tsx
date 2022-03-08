@@ -36,7 +36,7 @@ export default function NavBar() {
       <BrowserView>
         <Box
           sx={{
-            width: "100vh",
+            width: "100%",
             flexGrow: 1,
             position: "sticky",
             top: 0,
@@ -44,7 +44,7 @@ export default function NavBar() {
           }}
         >
           <AppBar position="static" style={{ background: "#01529d" }}>
-            <Toolbar variant="regular" sx={{ width: "auto" }}>
+            <Toolbar variant="regular" sx={{ width: "100%" }}>
               <Button
                 variant="text"
                 style={{
@@ -127,8 +127,8 @@ export default function NavBar() {
         </Box>
       </BrowserView>
       <MobileView>
-        <AppBar variant="outlined" position="static" sx={{ width: "100vh" }}>
-          <Toolbar className="navbar-mobile" sx={{ width: "100vh" }}>
+        <AppBar variant="outlined" position="static" sx={{ width: "100%" }}>
+          <Toolbar className="navbar-mobile" sx={{ width: "100%" }}>
             <IconButton
               className="hamburger"
               edge="start"
