@@ -68,7 +68,8 @@ const groups = [
     Bilde: band2,
     Reverse: true,
     Navn: "PR",
-    Tekst: "MANGLER PR SIN TEKST",
+    Tekst:
+      "PR er gruppen som sørger for at du vet hva og når ting skjer om og rundt revyen. De er ansvarlig for nettside, posters, logo og mye mer. PR består av en kreativ gjeng som progger, tegner og håndterer sosiale medier.",
   },
   {
     // Ikke bilde her

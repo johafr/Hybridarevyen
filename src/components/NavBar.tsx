@@ -113,7 +113,6 @@ export default function NavBar() {
                     float: "right",
                     padding: "10px",
                     transition: "0.2s",
-                    // marginRight: "30px",
                   }}
                 />
               </a>

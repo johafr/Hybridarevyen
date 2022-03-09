@@ -308,7 +308,7 @@ h2 {
 /* Styret-screen  */
 
 .styret-pic {
-  margin: 50px;
+  margin: 20px;
   max-width: 94%;
 }
 
@@ -320,10 +320,10 @@ h2 {
 .members-pic {
   width: 250px;
   height: 281px;
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 10 0%;
+  max-height: 100%;
   position: flex;
-  margin-left: 20%;
+  margin-left: 40%;
 }
 
 .members-pic2 {
@@ -362,7 +362,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .subHeader-styret {
@@ -370,7 +370,6 @@ h2 {
   text-align: left;
   font-size: 50px;
   color: black;
-  margin-left: 10px;
 }
 
 .h1-styret {
@@ -452,12 +451,12 @@ h2 {
 
   .promo {
     margin-left: 9%;
-    margin-bottom: 2100%;
+    top: 6%;
   }
 
   .scroll {
     margin-left: 52%;
-    margin-bottom: 2100%;
+    top: 6%;
   }
 
   button {
@@ -514,6 +513,25 @@ h2 {
   #gruppe_p {
     margin-left: 0%;
     margin-right: 10%;
+  }
+
+  .members-pic {
+    width: 250px;
+    height: 281px;
+    max-width: 100%;
+    max-height: 100%;
+    position: flex;
+    margin-left: 20%;
+  }
+  .styret-pic {
+    max-width: 80%;
+    margin-right: 30%;
+  }
+  .subHeader-styret {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: black;
   }
 }
 
