@@ -133,11 +133,11 @@ const Styret: React.FC<any> = ({ history }) => {
       <Grid container spacing={2}>
         {members.map((member) => (
           <Grid container spacing={1}>
-            <Grid item key={member.Name} xs={12} sm={3} md={3}>
+            <Grid item key={member.Name} xs={12} sm={4} md={4}>
               <img src={member.pic} alt="test" className="members-pic" />
               {/* <img src={member.hoverpic} alt="test" className="members-pic2" /> */}
             </Grid>
-            <Grid item key={member.pic} xs={12} sm={9} md={9}>
+            <Grid item key={member.pic} xs={12} sm={8} md={8}>
               <header className="subHeader-styret">{member.Name}</header>
               <p className="description-styret">{member.Text}</p>
             </Grid>

@@ -38,13 +38,11 @@ export const Footer: React.FC = () => {
             </div>
             <div>
               <i className="fa fa-phone"></i>
-              <p> (+47) 123 45 678</p>
+              {/* <p> (+47) 123 45 678</p> */}
             </div>
             <div>
               <i className="fa fa-envelope"></i>
-              <p>
-                <a href="#"> bare@revy.no</a>
-              </p>
+              <p>{/* <a href="#"> bare@revy.no</a> */}</p>
             </div>
           </div>
           <div className="footer-right" style={{ float: "right" }}>

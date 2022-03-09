@@ -1,14 +1,16 @@
 import React from "react";
 //import AppBar from "../components/AppBar";
 import { History } from "history";
+import { createStyles, makeStyles, Theme } from "@material-ui/core";
+
+import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
-import { createStyles, makeStyles, Theme, Box } from "@material-ui/core";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
-// import elise from "../bilderr/nyebilder/elise.jpg";
+import elise from "../bilderr/nyebilder/elise.jpg";
 import sverre from "../bilderr/nyebilder/sverre.jpg";
 import mo from "../bilderr/nyebilder/MO.jpg";
 import helene from "../bilderr/nyebilder/helene.jpg";
@@ -17,41 +19,40 @@ import steph from "../bilderr/nyebilder/steph.jpg";
 import kris from "../bilderr/nyebilder/kris.jpg";
 import even from "../bilderr/nyebilder/even.jpg";
 import logo from "../bilderr/logo.png";
-import elise from "../bilderr/nyebilder/elise.jpg";
 
 const actors = [
   {
     Name: "Elise Raaen Bø",
-    pic: elise,
+    pic: elise
   },
   {
     Name: "Sverre Kjuus",
-    pic: sverre,
+    pic: sverre
   },
   {
     Name: "Mads Olav Eek",
-    pic: mo,
+    pic: mo
   },
   {
     Name: "Helene Maria Tellefsen",
-    pic: helene,
+    pic: helene
   },
   {
     Name: "Oscar Timm Marcussen",
-    pic: oscar,
+    pic: oscar
   },
   {
     Name: "Stephanie Huynh",
-    pic: steph,
+    pic: steph
   },
   {
     Name: "Kristoffer Seyffarth",
-    pic: kris,
+    pic: kris
   },
   {
     Name: "Even Eielsen",
-    pic: even,
-  },
+    pic: even
+  }
 ];
 
 const Actors: React.FC<any> = ({ history }) => {
@@ -67,7 +68,7 @@ const Actors: React.FC<any> = ({ history }) => {
             marginTop: 2,
             marginLeft: 2,
             marginRight: 2,
-            marginBottom: 2,
+            marginBottom: 2
           }}
         >
           <Grid
@@ -75,7 +76,7 @@ const Actors: React.FC<any> = ({ history }) => {
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            {actors.map((actor) => (
+            {actors.map(actor => (
               <Grid item xs={12} sm={4} md={4}>
                 <Card
                   sx={{
@@ -83,7 +84,7 @@ const Actors: React.FC<any> = ({ history }) => {
                     height: "auto",
                     maxWidth: "100%",
                     maxHeight: "100%",
-                    borderRadius: "20px",
+                    borderRadius: "20px"
                   }}
                 >
                   <CardMedia

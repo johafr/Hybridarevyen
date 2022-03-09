@@ -10,6 +10,10 @@ html {
   overflow-x: hidden;
 }
 
+.head {
+  font-family: "Lato", sans-serif;
+}
+
 body {
   background: skyblue;
 }
@@ -271,8 +275,8 @@ h2 {
 
 .actors-pic {
   margin-top: 20px;
-  max-height: 75%;
-  max-width: 75%;
+  max-height: 90%;
+  max-width: 90%;
   margin-top: 25px;
   object-fit: cover;
   border-radius: 20%;
@@ -292,6 +296,11 @@ h2 {
   margin-right: 20%;
 }
 
+.actors-kris {
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
 .grid-remove {
   padding: 0;
 }
@@ -299,7 +308,7 @@ h2 {
 /* Styret-screen  */
 
 .styret-pic {
-  margin: 20px;
+  margin: 50px;
   max-width: 94%;
 }
 
@@ -311,6 +320,8 @@ h2 {
 .members-pic {
   width: 250px;
   height: 281px;
+  max-width: 40%;
+  max-height: 20%;
   position: flex;
   margin-left: 20%;
 }
@@ -507,6 +518,38 @@ h2 {
 }
 
 .genus-logo {
+  object-fit: cover;
+  width: 35%;
+  height: 35%;
+  margin-left: 32%;
+}
+
+.h2-genus {
+  position: center;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.h1-actors {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-decoration: underline;
+}
+
+.actors-logo {
+  margin-top: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 25px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 60%;
+  width: 60%;
   height: 35%;
   width: 35%;
   margin-left: 35%;

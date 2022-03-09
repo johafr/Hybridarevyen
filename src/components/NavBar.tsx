@@ -29,7 +29,7 @@ export default function NavBar() {
       <BrowserView>
         <Box
           sx={{
-            width: "100%",
+            width: "auto",
             flexGrow: 1,
             position: "sticky",
             top: 0,
@@ -109,10 +109,11 @@ export default function NavBar() {
               >
                 <FaInstagram
                   style={{
+                    marginRight: "30px",
                     float: "right",
                     padding: "10px",
                     transition: "0.2s",
-                    marginRight: "30px",
+                    // marginRight: "30px",
                   }}
                 />
               </a>
