@@ -288,30 +288,6 @@ h2 {
   margin-right: 20%;
 }
 
-.actors-kris {
-  margin-top: 20px;
-  max-height: 53%;
-  max-width: 53%;
-  margin-top: 25px;
-  object-fit: cover;
-  border-radius: 20%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 4%;
-}
-
-.actors-kris2 {
-  margin-top: 20px;
-  max-height: 50%;
-  max-width: 53%;
-  margin-top: 25px;
-  object-fit: cover;
-  border-radius: 20%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 4%;
-}
-
 .grid-remove {
   padding: 0;
 }
@@ -332,7 +308,7 @@ h2 {
   width: 250px;
   height: 281px;
   position: flex;
-  margin-left: 5%;
+  margin-left: 20%;
 }
 
 .members-pic2 {
@@ -371,6 +347,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 16px;
+  margin-left: 10px;
 }
 
 .subHeader-styret {
@@ -378,7 +355,7 @@ h2 {
   text-align: left;
   font-size: 50px;
   color: black;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .h1-styret {
@@ -439,6 +416,12 @@ h2 {
     max-height: 80%;
     /* margin-left: 20px;
       margin-right: 20px; */
+  }
+
+  .navbar-logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 100%;
   }
 
   .main_box {
@@ -517,4 +500,10 @@ h2 {
     margin-left: 0%;
     margin-right: 10%;
   }
+}
+
+.genus-logo {
+  height: 35%;
+  width: 35%;
+  margin-left: 35%;
 }

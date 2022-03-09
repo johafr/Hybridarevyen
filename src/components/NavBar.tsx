@@ -29,7 +29,7 @@ export default function NavBar() {
       <BrowserView>
         <Box
           sx={{
-            width: "100%",
+            width: "auto",
             flexGrow: 1,
             position: "sticky",
             top: 0,
