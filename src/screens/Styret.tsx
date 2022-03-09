@@ -107,24 +107,15 @@ const Styret: React.FC<any> = ({ history }) => {
           <p className="">
             I år har Hybrida stått på for å få igang en revy for aller første
             gang! På bilde ser du oss i revystyret. Men det er ikke så viktig.
-            Det viktige er at vi trenger deg for å få til en skikkelig bra revy.
-            For selv om vi brenner veldig for å få til en revy, er ikke dette
-            noe vi kan klare alene. Så hva kan du hjelpe til med i en revy spør
-            du? Alt, absolutt alt, nesten. Vi trenger hvert fall folk til både
-            små og store verv. Er det en ting vi kan garantere, så er virkelig
-            gode muligheter til å bli kjent med folk på linja! Revyen består av
-            oss i styret, skuespillere, band, PR-gruppe, kosegruppe,
-            manusgruppe, scenegruppe. Det beste? Revyen har plass til alle som
-            vil. Enten du har mye tid for hånd og vil dypdykke deg inn i
-            revyarbeidet, eller om du kanskje ikke har så mye tid, men vil
-            hjelpe til der det trengs, null problem! Å få til en bra revy er
-            selvfølgelig dritkult, men enda kulere er det å få til masse sosialt
-            for hybrider og skape et godt sosialt miljø for alle som vil delta!
-            Så enten du ønsker en stor skuespillerrolle, vil lage kostymer,
-            planlegge revyfester, snekre rekvisitter, spille tuba, temme slanger
-            eller være ledningssorterer så håper vi at du benytter muligheten
-            til å bli med i dette fantastiske felleskapet Hybridarevyen skal
-            være!
+            Det som er viktig er at vi har laget et skikkelig show. Hva gjør man
+            egentlig i en revy spør du? Alt, absolutt alt, nesten. Kanskje ikke
+            nesten alt, men ikke så alt for langt fra det. Okei kanskje litt
+            langt fra alt, men vi gjør ganske mye! Årets revy er Hybridas
+            første, så alt vi har gjort har vi gjort for første gang! Det er
+            litt skremmende, men også ganske spennende. Resultatet har vi også
+            lært oss å like etter utallige gjennomganger. Kom og se på da vel!
+            Kanskje du liker det, kanskje ikke. Da kan du bli litt bedre kjent
+            med oss også. Hvis du kommer bort og snakker med oss da.
           </p>
           <img src={styrepic} alt="test" className="styret-pic"></img>
         </div>

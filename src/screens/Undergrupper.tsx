@@ -56,29 +56,29 @@ const groups = [
     Tekst:
       "Disse søte tullingene er Hybridarevyens dansere 💃🕺 Stephanie, Kaia og Jemima har stått for koreografi, og sammen med Siri, Kristina og Jonas er de blitt the dreamteam 🤩⭐️ Kom på revyen for å se denne fine gjengen svinge og hoie rundt på scenen 🤗",
   },
-  {
-    // ikke bilde her
-    Bilde: kose,
-    Reverse: false,
-    Navn: "Kosegruppa",
-    Tekst:
-      "Kosegruppa lager fester, kos og jammer! Det er en gruppe full av koselige personer som har gjort sitt aller beste for å gjøre revyen gøy for alle, koselig sett. Kosen vår har lyst opp ansikter mange ganger de siste månedene og vi kommer til å savne å kunne gjøre det… MEN nå er det revvvyyy og håper dere koser dere som bare rakkern!!!!",
-  },
-  {
-    Bilde: band2,
-    Reverse: true,
-    Navn: "PR",
-    Tekst:
-      "PR er gruppen som sørger for at du vet hva og når ting skjer om og rundt revyen. De er ansvarlig for nettside, posters, logo og mye mer. PR består av en kreativ gjeng som progger, tegner og håndterer sosiale medier.",
-  },
-  {
-    // Ikke bilde her
-    Bilde: kose,
-    Reverse: false,
-    Navn: "Scene",
-    Tekst:
-      "Denne gjengen her har ansvar for alt fra kostymer til rekvisitter på scenen. I løpet av revyperioden har vi gjort alt fra å sy kostymer, snekre klipper og ordne prekestol. Alt dere ser på scenen som ikke er skuespillere eller dansere er det vi som har stått for. Vi har laget mesterverk selv Da Vinci hadde blitt imponert over! I tillegg er vi en skikkelig godgjeng som har det veldig gøy sammen!",
-  },
+  // {
+  //   // ikke bilde her
+  //   Bilde: kose,
+  //   Reverse: false,
+  //   Navn: "Kosegruppa",
+  //   Tekst:
+  //     "Kosegruppa lager fester, kos og jammer! Det er en gruppe full av koselige personer som har gjort sitt aller beste for å gjøre revyen gøy for alle, koselig sett. Kosen vår har lyst opp ansikter mange ganger de siste månedene og vi kommer til å savne å kunne gjøre det… MEN nå er det revvvyyy og håper dere koser dere som bare rakkern!!!!",
+  // },
+  // {
+  //   Bilde: band2,
+  //   Reverse: true,
+  //   Navn: "PR",
+  //   Tekst:
+  //     "PR er gruppen som sørger for at du vet hva og når ting skjer om og rundt revyen. De er ansvarlig for nettside, posters, logo og mye mer. PR består av en kreativ gjeng som progger, tegner og håndterer sosiale medier.",
+  // },
+  // {
+  //   // Ikke bilde her
+  //   Bilde: kose,
+  //   Reverse: false,
+  //   Navn: "Scene",
+  //   Tekst:
+  //     "Denne gjengen her har ansvar for alt fra kostymer til rekvisitter på scenen. I løpet av revyperioden har vi gjort alt fra å sy kostymer, snekre klipper og ordne prekestol. Alt dere ser på scenen som ikke er skuespillere eller dansere er det vi som har stått for. Vi har laget mesterverk selv Da Vinci hadde blitt imponert over! I tillegg er vi en skikkelig godgjeng som har det veldig gøy sammen!",
+  // },
 ];
 
 const Undergrupper: React.FC<any> = ({ history }) => {

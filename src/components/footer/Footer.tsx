@@ -46,9 +46,13 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           <div className="footer-right" style={{ float: "right" }}>
-            <h2>
+            <h2 className="footer-color">
               {" "}
-              Bare<span style={{ color: "#F64C72" }}>Revy</span>
+              <span style={{ color: "black" }}>BARE</span>
+              <span style={{ color: "#01529d" }}>R</span>
+              <span style={{ color: "green" }}>E</span>
+              <span style={{ color: "gray" }}>V</span>
+              <span style={{ color: "#F64C72" }}>Y</span>
             </h2>
             <p className="menu">
               <a href="/"> Hjem</a> |<a href="/styret"> Om oss</a> |

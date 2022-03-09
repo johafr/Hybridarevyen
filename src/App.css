@@ -451,12 +451,12 @@ h2 {
 
   .promo {
     margin-left: 9%;
-    top: 6%;
+    top: 7%;
   }
 
   .scroll {
     margin-left: 52%;
-    top: 6%;
+    top: 7%;
   }
 
   button {
@@ -571,4 +571,10 @@ h2 {
   height: 35%;
   width: 35%;
   margin-left: 35%;
+}
+
+.footer-color {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
