@@ -33,7 +33,7 @@ interface Props {
 const Home: React.FC<Props> = ({ history }) => {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
 
       <div className="front">
