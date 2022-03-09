@@ -1,51 +1,58 @@
 import React from "react";
 //import AppBar from "../components/AppBar";
 import { History } from "history";
-import { Grid, Card } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core";
-import elise from "../bilderr/Casper1.png";
-import sverre from "../bilderr/Casper1.png";
-import mo from "../bilderr/Casper1.png";
-import helene from "../bilderr/Casper1.png";
-import oscar from "../bilderr/Casper1.png";
-import steph from "../bilderr/Casper1.png";
-import kris from "../bilderr/Casper1.png";
-import even from "../bilderr/Casper1.png";
+
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Grid from "@mui/material/Grid";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+
+import elise from "../bilderr/nyebilder/elise.jpg";
+import sverre from "../bilderr/nyebilder/sverre.jpg";
+import mo from "../bilderr/nyebilder/MO.jpg";
+import helene from "../bilderr/nyebilder/helene.jpg";
+import oscar from "../bilderr/nyebilder/timm.jpg";
+import steph from "../bilderr/nyebilder/steph.jpg";
+import kris from "../bilderr/nyebilder/kris.jpg";
+import even from "../bilderr/nyebilder/even.jpg";
 import logo from "../bilderr/logo.png";
 
 const actors = [
   {
     Name: "Elise Raaen Bø",
-    pic: elise,
+    pic: elise
   },
   {
     Name: "Sverre Kjuus",
-    pic: sverre,
+    pic: sverre
   },
   {
     Name: "Mads Olav Eek",
-    pic: mo,
+    pic: mo
   },
   {
     Name: "Helene Maria Tellefsen",
-    pic: helene,
+    pic: helene
   },
   {
     Name: "Oscar Timm Marcussen",
-    pic: oscar,
+    pic: oscar
   },
   {
     Name: "Stephanie Huynh",
-    pic: steph,
+    pic: steph
   },
-  // {
-  //   Name: "Kristoffer Seyffarth",
-  //   pic: kris,
-  // },
-  // {
-  //   Name: "Even Eielsen",
-  //   pic: even,
-  // },
+  {
+    Name: "Kristoffer Seyffarth",
+    pic: kris
+  },
+  {
+    Name: "Even Eielsen",
+    pic: even
+  }
 ];
 
 const Actors: React.FC<any> = ({ history }) => {
@@ -55,36 +62,47 @@ const Actors: React.FC<any> = ({ history }) => {
         <h1 className="h1-actors">Skuespillerne</h1>
       </div>
       <div className="">
-        <Grid container spacing={5} className="actors-container grid-remove">
-          {actors.map((actor) => (
-            <>
-              <Grid
-                className="actors-name grid-remove"
-                item
-                xs={12}
-                sm={4}
-                md={4}
-                key={actor.Name}
-              >
-                <div className="actors-name">
-                  <img className="actors-pic" src={actor.pic} />
-                  <h2 className="actors-name">{actor.Name}</h2>
-                </div>
+        <Box
+          sx={{
+            flexGrow: 1,
+            marginTop: 2,
+            marginLeft: 2,
+            marginRight: 2,
+            marginBottom: 2
+          }}
+        >
+          <Grid
+            container
+            spacing={{ xs: 2, md: 3 }}
+            columns={{ xs: 4, sm: 8, md: 12 }}
+          >
+            {actors.map(actor => (
+              <Grid item xs={12} sm={4} md={4}>
+                <Card
+                  sx={{
+                    width: "auto",
+                    height: "auto",
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    borderRadius: "20px"
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    height="auto"
+                    image={actor.pic}
+                    alt="bilde"
+                  />
+                  <CardContent>
+                    <Typography>
+                      <h3>{actor.Name}</h3>
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
-            </>
-          ))}
-          <Grid className="actors-kris" item xs={12} sm={6} md={6}>
-            <img className="actors-kris" src={kris} />
-            <h2 className="actors-kris">Kristoffer Seyffarth </h2>
+            ))}
           </Grid>
-          {/* <Grid item xs={12} sm={4} md={4}>
-            <img className="actors-logogrid-remove " src={logo} />
-          </Grid> */}
-          <Grid item xs={12} sm={4} md={4} className="grid-remove">
-            <img className="actors-kris" src={even} />
-            <h2 className="actors-kris">Even Eilesen</h2>
-          </Grid>
-        </Grid>
+        </Box>
       </div>
     </div>
   );

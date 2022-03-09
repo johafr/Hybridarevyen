@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.test {
+  width: 100vh;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -319,7 +323,7 @@ h2 {
   max-width: 40%;
   max-height: 20%;
   position: flex;
-  margin-left: 5%;
+  margin-left: 20%;
 }
 
 .members-pic2 {
@@ -358,6 +362,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 16px;
+  margin-left: 10px;
 }
 
 .subHeader-styret {
@@ -365,6 +370,7 @@ h2 {
   text-align: left;
   font-size: 50px;
   color: black;
+  margin-left: 10px;
 }
 
 .h1-styret {
@@ -425,6 +431,12 @@ h2 {
     max-height: 80%;
     /* margin-left: 20px;
       margin-right: 20px; */
+  }
+
+  .navbar-logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 100%;
   }
 
   .main_box {
@@ -538,4 +550,7 @@ h2 {
   margin-right: 20%;
   height: 60%;
   width: 60%;
+  height: 35%;
+  width: 35%;
+  margin-left: 35%;
 }

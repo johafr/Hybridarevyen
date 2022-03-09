@@ -75,7 +75,8 @@ const groups = [
     Bilde: kose,
     Reverse: false,
     Navn: "Scene",
-    Tekst: "MANGLER SCENEEEEE",
+    Tekst:
+      "Denne gjengen her har ansvar for alt fra kostymer til rekvisitter på scenen. Denne gjengen har gjort alt fra å sy kostymer, snekre klipper og ordne prekestol. Vi har med andre ord gjort mye forskjellig. I tillegg er dette en skikkelig godgjeng som er veldig sosiale og morsomme og jobbe med!",
   },
 ];
 
