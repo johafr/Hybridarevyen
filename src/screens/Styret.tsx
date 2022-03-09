@@ -3,7 +3,7 @@ import React from "react";
 import { History } from "history";
 import NavBar from "../components/NavBar";
 import Footer from "../components/footer/Footer";
-import styrepic from "../bilderr/styrebilde.jpg";
+import styrepic from "../bilderr/nyebilder/styre.jpg";
 import Sigurd from "../bilderr/bilder 2/Sigurd1.jpg";
 import Elise from "../bilderr/bilder 2/Elise1.jpg";
 import Johannes from "../bilderr/bilder 2/Johannes1.jpg";
@@ -100,7 +100,7 @@ const members = [
 const Styret: React.FC<any> = ({ history }) => {
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       <div className="main_box">
         <div className="sub_box">
           <h1 className="">Om oss</h1>

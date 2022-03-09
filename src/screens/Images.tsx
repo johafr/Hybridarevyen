@@ -186,7 +186,7 @@ const imgs = [
 const Images: React.FC<props> = () => {
   return (
     <div className="">
-      {/* <NavBar /> */}
+      <NavBar />
       <Box
         sx={{
           flexGrow: 1,

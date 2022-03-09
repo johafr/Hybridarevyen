@@ -2,7 +2,7 @@ import React, { RefObject } from "react";
 //import AppBar from "../components/AppBar";
 import { History } from "history";
 import { Link } from "react-router-dom";
-import styrebilde from "../bilderr/styrebilde.jpg";
+import styrebilde from "../bilderr/nyebilder/styre.jpg";
 import logo from "../bilderr/logo.png";
 import bottom from "../bilderr/bottom.jpg";
 import ReactPlayer from "react-player";
@@ -33,7 +33,7 @@ interface Props {
 const Home: React.FC<Props> = ({ history }) => {
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
 
       <div className="front">

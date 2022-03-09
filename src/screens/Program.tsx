@@ -39,7 +39,7 @@ const OmOss: React.FC<props> = () => {
                 "Vi har et stort problem i bedriften"-sketsjen`;
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       <Grid
         container
         spacing={0}

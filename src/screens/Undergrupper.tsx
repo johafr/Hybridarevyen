@@ -76,7 +76,7 @@ const groups = [
     Reverse: false,
     Navn: "Scene",
     Tekst:
-      "Denne gjengen her har ansvar for alt fra kostymer til rekvisitter på scenen. Denne gjengen har gjort alt fra å sy kostymer, snekre klipper og ordne prekestol. Vi har med andre ord gjort mye forskjellig. I tillegg er dette en skikkelig godgjeng som er veldig sosiale og morsomme og jobbe med!",
+      "Denne gjengen her har ansvar for alt fra kostymer til rekvisitter på scenen. I løpet av revyperioden har vi gjort alt fra å sy kostymer, snekre klipper og ordne prekestol. Alt dere ser på scenen som ikke er skuespillere eller dansere er det vi som har stått for. Vi har laget mesterverk selv Da Vinci hadde blitt imponert over! I tillegg er vi en skikkelig godgjeng som har det veldig gøy sammen!",
   },
 ];
 
