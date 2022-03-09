@@ -39,7 +39,7 @@ const OmOss: React.FC<props> = () => {
                 "Vi har et stort problem i bedriften"-sketsjen`;
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       <Grid
         container
         spacing={0}
@@ -57,8 +57,8 @@ const OmOss: React.FC<props> = () => {
               m: 1,
               width: "90%",
               height: "auto",
-              minHeight: 500,
-            },
+              minHeight: 500
+            }
           }}
         >
           <Paper elevation={24}>

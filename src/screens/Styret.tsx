@@ -109,7 +109,7 @@ const members = [
 const Styret: React.FC<any> = ({ history }) => {
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       <div className="main_box">
         <div className="sub_box">
           <h1 className="">Om oss</h1>

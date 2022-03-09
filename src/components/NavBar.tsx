@@ -112,8 +112,7 @@ export default function NavBar() {
                     marginRight: "30px",
                     float: "right",
                     padding: "10px",
-                    transition: "0.2s",
-                    marginRight: "30px"
+                    transition: "0.2s"
                   }}
                 />
               </a>

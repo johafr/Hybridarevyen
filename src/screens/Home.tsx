@@ -22,7 +22,7 @@ import {
   TableBody,
   TableCell,
   TableRow,
-  Theme,
+  Theme
 } from "@material-ui/core";
 import { isPropertySignature } from "typescript";
 
@@ -33,7 +33,7 @@ interface Props {
 const Home: React.FC<Props> = ({ history }) => {
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
       {/*<AppBar onOmOss={() => history.push("/OmOss")} history={history}></AppBar>*/}
 
       <div className="front">

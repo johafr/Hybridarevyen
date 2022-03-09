@@ -34,7 +34,6 @@ const App: React.FC = () => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
         <div className={"content-wrap"}>
-          <NavBar />
           <BrowserRouter>
             <Switch>
               <Route path="/" exact render={props => <Home {...props} />} />
