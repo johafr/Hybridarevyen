@@ -6,6 +6,10 @@ html {
   overflow-x: hidden;
 }
 
+.head {
+  font-family: "Lato", sans-serif;
+}
+
 body {
   background: skyblue;
 }
@@ -499,8 +503,6 @@ h2 {
     margin-left: 0%;
     margin-right: 10%;
   }
-<<<<<<< HEAD
-=======
 }
 
 .genus-logo {
@@ -536,5 +538,4 @@ h2 {
   margin-right: 20%;
   height: 60%;
   width: 60%;
->>>>>>> 782354c73ff731e44425dad78aa0afdf548a265a
 }

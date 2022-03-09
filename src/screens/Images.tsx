@@ -56,131 +56,131 @@ interface props extends defaultProps {}
 
 const imgs = [
   {
-    Bilde: img1,
+    Bilde: img1
   },
   {
-    Bilde: img2,
+    Bilde: img2
   },
   {
-    Bilde: img3,
+    Bilde: img3
   },
   {
-    Bilde: img4,
+    Bilde: img4
   },
   {
-    Bilde: img5,
+    Bilde: img5
   },
   {
-    Bilde: img6,
+    Bilde: img6
   },
   {
-    Bilde: img7,
+    Bilde: img7
   },
   {
-    Bilde: img8,
+    Bilde: img8
   },
   {
-    Bilde: img9,
+    Bilde: img9
   },
   {
-    Bilde: img10,
+    Bilde: img10
   },
   {
-    Bilde: img11,
+    Bilde: img11
   },
   {
-    Bilde: img12,
+    Bilde: img12
   },
   {
-    Bilde: img13,
+    Bilde: img13
   },
   {
-    Bilde: img14,
+    Bilde: img14
   },
   {
-    Bilde: img15,
+    Bilde: img15
   },
   {
-    Bilde: img16,
+    Bilde: img16
   },
   {
-    Bilde: img17,
+    Bilde: img17
   },
   {
-    Bilde: img18,
+    Bilde: img18
   },
   {
-    Bilde: img19,
+    Bilde: img19
   },
   {
-    Bilde: img20,
+    Bilde: img20
   },
   {
-    Bilde: img21,
+    Bilde: img21
   },
   {
-    Bilde: img22,
+    Bilde: img22
   },
   {
-    Bilde: img23,
+    Bilde: img23
   },
   {
-    Bilde: img24,
+    Bilde: img24
   },
   {
-    Bilde: img25,
+    Bilde: img25
   },
   {
-    Bilde: img26,
+    Bilde: img26
   },
   {
-    Bilde: img27,
+    Bilde: img27
   },
   {
-    Bilde: img28,
+    Bilde: img28
   },
   {
-    Bilde: img29,
+    Bilde: img29
   },
   {
-    Bilde: img30,
+    Bilde: img30
   },
   {
-    Bilde: img31,
+    Bilde: img31
   },
   {
-    Bilde: img32,
+    Bilde: img32
   },
   {
-    Bilde: img33,
+    Bilde: img33
   },
   {
-    Bilde: img34,
+    Bilde: img34
   },
   {
-    Bilde: img35,
+    Bilde: img35
   },
   {
-    Bilde: img36,
+    Bilde: img36
   },
   {
-    Bilde: img37,
+    Bilde: img37
   },
   {
-    Bilde: img38,
+    Bilde: img38
   },
   {
-    Bilde: img39,
+    Bilde: img39
   },
   {
-    Bilde: img40,
+    Bilde: img40
   },
   {
-    Bilde: img41,
+    Bilde: img41
   },
   {
-    Bilde: img42,
-  },
+    Bilde: img42
+  }
 ];
 
 const Images: React.FC<props> = () => {
@@ -193,7 +193,7 @@ const Images: React.FC<props> = () => {
           marginTop: 2,
           marginLeft: 2,
           marginRight: 2,
-          marginBottom: 2,
+          marginBottom: 2
         }}
       >
         <Grid
@@ -201,7 +201,7 @@ const Images: React.FC<props> = () => {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          {imgs.map((img) => (
+          {imgs.map(img => (
             <Grid item xs={12} sm={4} md={4}>
               <Card
                 sx={{
@@ -209,7 +209,7 @@ const Images: React.FC<props> = () => {
                   height: "auto",
                   maxWidth: "100%",
                   maxHeight: "100%",
-                  borderRadius: "20px",
+                  borderRadius: "20px"
                 }}
               >
                 <CardMedia

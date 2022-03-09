@@ -29,11 +29,11 @@ export default function NavBar() {
       <BrowserView>
         <Box
           sx={{
-            width: "100%",
+            width: "auto",
             flexGrow: 1,
             position: "sticky",
             top: 0,
-            zIndex: 9999,
+            zIndex: 9999
           }}
         >
           <AppBar position="static" style={{ background: "#01529d" }}>
@@ -43,9 +43,9 @@ export default function NavBar() {
                 style={{
                   color: "white",
                   marginTop: "20px",
-                  transition: "0.2s",
+                  transition: "0.2s"
                 }}
-                onClick={(e) => history.push("/program")}
+                onClick={e => history.push("/program")}
               >
                 Program
               </Button>
@@ -56,9 +56,9 @@ export default function NavBar() {
                   marginRight: "500px",
                   margin: "auto",
                   marginTop: "20px",
-                  transition: "0.2s",
+                  transition: "0.2s"
                 }}
-                onClick={(e) => history.push("/Bilder")}
+                onClick={e => history.push("/Bilder")}
               >
                 Bilder
               </Button>
@@ -72,9 +72,9 @@ export default function NavBar() {
                   color: "white",
                   margin: "auto",
                   marginTop: "20px",
-                  transition: "0.2s",
+                  transition: "0.2s"
                 }}
-                onClick={(e) => history.push("/styret")}
+                onClick={e => history.push("/styret")}
               >
                 Hvem er vi?
               </Button>
@@ -85,7 +85,7 @@ export default function NavBar() {
                     color: "white",
                     margin: "auto",
                     marginTop: "20px",
-                    transition: "0.2s",
+                    transition: "0.2s"
                   }}
                 >
                   Kjøp Billett
@@ -99,7 +99,7 @@ export default function NavBar() {
                   style={{
                     float: "right",
                     padding: "10px",
-                    transition: "0.2s",
+                    transition: "0.2s"
                   }}
                 />
               </a>
@@ -109,9 +109,10 @@ export default function NavBar() {
               >
                 <FaInstagram
                   style={{
+                    marginRight: "30px",
                     float: "right",
                     padding: "10px",
-                    transition: "0.2s",
+                    transition: "0.2s"
                   }}
                 />
               </a>
@@ -143,19 +144,19 @@ export default function NavBar() {
                 <ListItem button>
                   <ListItemText
                     primary="Program"
-                    onClick={(e) => history.push("/program")}
+                    onClick={e => history.push("/program")}
                   />
                 </ListItem>
                 <ListItem button>
                   <ListItemText
                     primary="Bilder"
-                    onClick={(e) => history.push("/Bilder")}
+                    onClick={e => history.push("/Bilder")}
                   />
                 </ListItem>
                 <ListItem button>
                   <ListItemText
                     primary="Hvem er vi?"
-                    onClick={(e) => history.push("/Styret")}
+                    onClick={e => history.push("/Styret")}
                   />
                 </ListItem>
                 <ListItem button>
